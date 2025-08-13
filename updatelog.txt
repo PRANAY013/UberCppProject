@@ -1,0 +1,65 @@
+- - - - -
+
+what i want it to start out as ... 
+
+- map 
+    -- places 
+        --- reachable 
+        --- unreachable / outta service areas
+            ---- will not go  
+            ---- will go 
+            ---- can go dont go 
+            ---- can go wont go 
+        --- favourites list for easy access and stuff 
+    -- routes 
+        --- algo used -> dijkstra / A* ?? industry standards and stuff -> something new on LeetCode I saw a few days back (aug2025) ?
+        --- edge cases -> whats the best place to drop off 
+
+        --- give estimates to the users -> rider and the driver 
+        --- figure the drop locations near the destinations 
+
+        --- surge prices ? rush hours
+        --- ride status sharing ?? 
+        --- carpooling and stuff 
+        --- season and stufff (lolllll)
+    -- simulate 
+        --- traffic - rush hours
+        --- demand - price surges 
+        --- worse routes (class of route) -> adding weights and the current traffic cause by other drivers and stuff ... can be done randomly and updatesd for like every 7min or 5kms (whateveres less)
+
+    -- edge cases probably 
+        --- destinations that do not have a well established or proper route 
+        --- no drivers nearby (damn... offer higher price quote... for driver comp)
+        --- no riders nearby (give alert to driver to move lol)
+
+- entities 
+    -- drivers
+        --- status -> offline , idle , engaged , riding 
+        --- rating -> 1-10
+        --- history -> rides+fares , earning-breakdown 
+    -- riders 
+        --- find ride 
+            ---- driver and choice of vehicles 
+            ---- based on incereasing distances - graph algo on the map used 
+            ---- payment options - fix once started / driver consent needed when changing
+        --- rating -> 1-10
+        --- history
+            ---- ride details , payment view link 
+
+- prompts for rider and the driver 
+    -- ride updates and statuses 
+    -- price details 
+    -- weather and construction alerts -> other issues as well 
+    --  
+
+- atomic payments gateway and settlements 
+    -- cash 
+        --- rider confirms -> completed / issue -> customer update ledger
+    -- card 
+        --- rider and save regulated card details for customer
+    -- digital 
+        --- transaction id and mode -> completed or raise issues
+
+
+
+- - - - -
