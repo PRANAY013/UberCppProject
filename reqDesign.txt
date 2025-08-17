@@ -1,0 +1,119 @@
+- excaliraw ... 
+- text spexs ... 
+
+
+
+- - - - -
+
+/src
+
+/domain
+
+rider/
+
+    Rider.h/.cc (id, rating, preferences)
+
+    RiderHistory.h/.cc
+
+driver/
+
+    Driver.h/.cc (status: offline/idle/engaged/riding; rating; vehicle)
+
+    DriverHistory.h/.cc
+
+trip/
+
+    Trip.h/.cc (states: requested, assigned, enroute, pickup, in_ride, completed, canceled)
+
+    Matching.h/.cc (nearest-driver selection interface)
+
+pricing/
+
+    SurgeModel.h/.cc (inputs: time, area demand, supply)
+
+    FareCalculator.h/.cc
+
+routing/
+
+    RoutePlan.h/.cc (polyline, distance, duration, waypoints)
+
+    Router.h (pure virtual interface)
+
+        GoogleRouterAdapter.h/.cc
+
+        MapboxRouterAdapter.h/.cc
+
+        ValhallaRouterAdapter.h/.cc
+
+geo/
+
+    GeoPoint.h/.cc, GeoFence.h/.cc (reachable/unreachable zones)
+
+    Place.h/.cc (POIs, favorites)
+
+/application
+
+UseCases/
+
+    RequestRideUseCase.h/.cc
+
+    AssignDriverUseCase.h/.cc
+
+    UpdateLocationUseCase.h/.cc
+
+    QuoteFareUseCase.h/.cc
+
+    ShareRideStatusUseCase.h/.cc
+
+/infrastructure
+
+    http/
+
+        GoogleMapsClient.h/.cc (Distance Matrix, Directions, Places)
+
+        MapboxClient.h/.cc (Directions, Matrix)
+
+        ValhallaClient.h/.cc (local HTTP to routing engine)
+
+    persistence/
+
+        repositories (RiderRepo, DriverRepo, TripRepo)  
+
+    messaging/
+
+        EventBus.h/.cc (in-proc now; Kafka/PubSub later)
+
+    payments/
+
+        PaymentsGateway.h/.cc (cash, card, digital)
+
+/interfaces
+
+    REST/gRPC controllers
+
+    DTOs and mappers
+
+/config
+
+    provider.yaml (choose router=google|mapbox|valhalla)
+
+    pricing.yaml (surge rules)
+
+    geofences.json (no-go/go zones)
+
+/tests
+
+    unit/ (domain logic; no network)
+
+    integration/ (adapters with mocked providers)
+
+/scripts
+
+    valhalla_build_graph.sh (if self-hosting)
+
+    osrm_extract_build.sh (if OSRM)
+
+/cmake or /bazel (consistent builds)
+
+
+- - - - -

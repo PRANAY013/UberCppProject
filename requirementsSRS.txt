@@ -1,8 +1,9 @@
 - - - - -
 
-what i want it to start out as ... 
+what i want it to start out as ... (12-13 aug 2025)
 
 - map 
+
     -- places 
         --- reachable 
         --- unreachable / outta service areas
@@ -11,6 +12,7 @@ what i want it to start out as ...
             ---- can go dont go 
             ---- can go wont go 
         --- favourites list for easy access and stuff 
+
     -- routes 
         --- algo used -> dijkstra / A* ?? industry standards and stuff -> something new on LeetCode I saw a few days back (aug2025) ?
         --- edge cases -> whats the best place to drop off 
@@ -22,21 +24,25 @@ what i want it to start out as ...
         --- ride status sharing ?? 
         --- carpooling and stuff 
         --- season and stufff (lolllll)
+
     -- simulate 
         --- traffic - rush hours
         --- demand - price surges 
         --- worse routes (class of route) -> adding weights and the current traffic cause by other drivers and stuff ... can be done randomly and updatesd for like every 7min or 5kms (whateveres less)
-
+    
     -- edge cases probably 
         --- destinations that do not have a well established or proper route 
         --- no drivers nearby (damn... offer higher price quote... for driver comp)
         --- no riders nearby (give alert to driver to move lol)
 
+
 - entities 
+
     -- drivers
         --- status -> offline , idle , engaged , riding 
         --- rating -> 1-10
         --- history -> rides+fares , earning-breakdown 
+   
     -- riders 
         --- find ride 
             ---- driver and choice of vehicles 
@@ -47,19 +53,28 @@ what i want it to start out as ...
             ---- ride details , payment view link 
 
 - prompts for rider and the driver 
+
     -- ride updates and statuses 
     -- price details 
     -- weather and construction alerts -> other issues as well 
     --  
 
 - atomic payments gateway and settlements 
+
     -- cash 
         --- rider confirms -> completed / issue -> customer update ledger
     -- card 
         --- rider and save regulated card details for customer
     -- digital 
         --- transaction id and mode -> completed or raise issues
-
+ 
 
 
 - - - - -
+to work on right now ... (14 aug 2025)
+
+1) get started with the map integration and what options do i have ... and why one over the other ... 
+2) i think ill first get started with the object making of the rider driver and stuff in cpp and ... and then further expand it with the request and routes... 
+3) how should i organize my direectory and its paths such that its clean modular and then still have the scope of integration with the maps and other stuff if i want it to be so in the future... should i be useing the microserice arch or the monolithic arch ?
+
+--> shift to the update log ... reqDesign.txt
