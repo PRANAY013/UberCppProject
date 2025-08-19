@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdomain.a CMakeFiles/domain.dir/src/domain/rider/Rider.cc.o CMakeFiles/domain.dir/src/domain/driver/Driver.cc.o CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o
+/usr/bin/ranlib libdomain.a
