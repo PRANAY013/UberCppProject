@@ -166,6 +166,30 @@ src/domain/driver/Driver.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/driver/Driver.cc.s
 .PHONY : src/domain/driver/Driver.cc.s
 
+src/domain/driver/DriverHistory.o: src/domain/driver/DriverHistory.cc.o
+.PHONY : src/domain/driver/DriverHistory.o
+
+# target to build an object file
+src/domain/driver/DriverHistory.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.o
+.PHONY : src/domain/driver/DriverHistory.cc.o
+
+src/domain/driver/DriverHistory.i: src/domain/driver/DriverHistory.cc.i
+.PHONY : src/domain/driver/DriverHistory.i
+
+# target to preprocess a source file
+src/domain/driver/DriverHistory.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.i
+.PHONY : src/domain/driver/DriverHistory.cc.i
+
+src/domain/driver/DriverHistory.s: src/domain/driver/DriverHistory.cc.s
+.PHONY : src/domain/driver/DriverHistory.s
+
+# target to generate assembly for a file
+src/domain/driver/DriverHistory.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.s
+.PHONY : src/domain/driver/DriverHistory.cc.s
+
 src/domain/geo/GeoFence.o: src/domain/geo/GeoFence.cc.o
 .PHONY : src/domain/geo/GeoFence.o
 
@@ -310,6 +334,78 @@ src/domain/rider/Rider.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/rider/Rider.cc.s
 .PHONY : src/domain/rider/Rider.cc.s
 
+src/domain/rider/RiderHistory.o: src/domain/rider/RiderHistory.cc.o
+.PHONY : src/domain/rider/RiderHistory.o
+
+# target to build an object file
+src/domain/rider/RiderHistory.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o
+.PHONY : src/domain/rider/RiderHistory.cc.o
+
+src/domain/rider/RiderHistory.i: src/domain/rider/RiderHistory.cc.i
+.PHONY : src/domain/rider/RiderHistory.i
+
+# target to preprocess a source file
+src/domain/rider/RiderHistory.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.i
+.PHONY : src/domain/rider/RiderHistory.cc.i
+
+src/domain/rider/RiderHistory.s: src/domain/rider/RiderHistory.cc.s
+.PHONY : src/domain/rider/RiderHistory.s
+
+# target to generate assembly for a file
+src/domain/rider/RiderHistory.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.s
+.PHONY : src/domain/rider/RiderHistory.cc.s
+
+src/domain/routing/RoutePlan.o: src/domain/routing/RoutePlan.cc.o
+.PHONY : src/domain/routing/RoutePlan.o
+
+# target to build an object file
+src/domain/routing/RoutePlan.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.o
+.PHONY : src/domain/routing/RoutePlan.cc.o
+
+src/domain/routing/RoutePlan.i: src/domain/routing/RoutePlan.cc.i
+.PHONY : src/domain/routing/RoutePlan.i
+
+# target to preprocess a source file
+src/domain/routing/RoutePlan.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.i
+.PHONY : src/domain/routing/RoutePlan.cc.i
+
+src/domain/routing/RoutePlan.s: src/domain/routing/RoutePlan.cc.s
+.PHONY : src/domain/routing/RoutePlan.s
+
+# target to generate assembly for a file
+src/domain/routing/RoutePlan.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.s
+.PHONY : src/domain/routing/RoutePlan.cc.s
+
+src/domain/trip/Matching.o: src/domain/trip/Matching.cc.o
+.PHONY : src/domain/trip/Matching.o
+
+# target to build an object file
+src/domain/trip/Matching.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/trip/Matching.cc.o
+.PHONY : src/domain/trip/Matching.cc.o
+
+src/domain/trip/Matching.i: src/domain/trip/Matching.cc.i
+.PHONY : src/domain/trip/Matching.i
+
+# target to preprocess a source file
+src/domain/trip/Matching.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/trip/Matching.cc.i
+.PHONY : src/domain/trip/Matching.cc.i
+
+src/domain/trip/Matching.s: src/domain/trip/Matching.cc.s
+.PHONY : src/domain/trip/Matching.s
+
+# target to generate assembly for a file
+src/domain/trip/Matching.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/trip/Matching.cc.s
+.PHONY : src/domain/trip/Matching.cc.s
+
 src/domain/trip/Trip.o: src/domain/trip/Trip.cc.o
 .PHONY : src/domain/trip/Trip.o
 
@@ -371,6 +467,9 @@ help:
 	@echo "... src/domain/driver/Driver.o"
 	@echo "... src/domain/driver/Driver.i"
 	@echo "... src/domain/driver/Driver.s"
+	@echo "... src/domain/driver/DriverHistory.o"
+	@echo "... src/domain/driver/DriverHistory.i"
+	@echo "... src/domain/driver/DriverHistory.s"
 	@echo "... src/domain/geo/GeoFence.o"
 	@echo "... src/domain/geo/GeoFence.i"
 	@echo "... src/domain/geo/GeoFence.s"
@@ -389,6 +488,15 @@ help:
 	@echo "... src/domain/rider/Rider.o"
 	@echo "... src/domain/rider/Rider.i"
 	@echo "... src/domain/rider/Rider.s"
+	@echo "... src/domain/rider/RiderHistory.o"
+	@echo "... src/domain/rider/RiderHistory.i"
+	@echo "... src/domain/rider/RiderHistory.s"
+	@echo "... src/domain/routing/RoutePlan.o"
+	@echo "... src/domain/routing/RoutePlan.i"
+	@echo "... src/domain/routing/RoutePlan.s"
+	@echo "... src/domain/trip/Matching.o"
+	@echo "... src/domain/trip/Matching.i"
+	@echo "... src/domain/trip/Matching.s"
 	@echo "... src/domain/trip/Trip.o"
 	@echo "... src/domain/trip/Trip.i"
 	@echo "... src/domain/trip/Trip.s"

@@ -795,16 +795,33 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/DriverHistory.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoFence.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/Place.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/FareCalculator.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h
 
 
+/Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h:
+
 /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h:
 
@@ -1690,6 +1707,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/back_insert_iterator.h:
 
+/Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/DriverHistory.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/locale_base_api.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h:
@@ -2323,10 +2342,6 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h:
-
-/Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:
 

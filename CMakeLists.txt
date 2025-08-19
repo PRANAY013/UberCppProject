@@ -8,10 +8,19 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(domain
     src/domain/rider/Rider.h
     src/domain/rider/Rider.cc
+    src/domain/rider/RiderHistory.h
+    src/domain/rider/RiderHistory.cc
     src/domain/driver/Driver.h
     src/domain/driver/Driver.cc
+    src/domain/driver/DriverHistory.h
+    src/domain/driver/DriverHistory.cc
     src/domain/trip/Trip.h
     src/domain/trip/Trip.cc
+    src/domain/trip/Matching.h
+    src/domain/trip/Matching.cc
+    src/domain/routing/Router.h
+    src/domain/routing/RoutePlan.h
+    src/domain/routing/RoutePlan.cc
     src/domain/geo/GeoPoint.h
     src/domain/geo/GeoPoint.cc
     src/domain/geo/GeoFence.h

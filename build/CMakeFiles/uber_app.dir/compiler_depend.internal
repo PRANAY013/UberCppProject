@@ -796,11 +796,18 @@ CMakeFiles/uber_app.dir/src/main.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
+ /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h
  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h
+ /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/DriverHistory.h
  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoFence.h
  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h
  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/Place.h
  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/FareCalculator.h
+ /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h
+ /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h
  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h
+ /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.h
+ /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h
+ /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h
  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h
 

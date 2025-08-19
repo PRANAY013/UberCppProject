@@ -86,10 +86,24 @@ CMakeFiles/domain.dir/src/domain/rider/Rider.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/domain.dir/src/domain/rider/Rider.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.cc -o CMakeFiles/domain.dir/src/domain/rider/Rider.cc.s
 
+CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o: CMakeFiles/domain.dir/flags.make
+CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.cc
+CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o: CMakeFiles/domain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o -MF CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o.d -o CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.cc
+
+CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.cc > CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.i
+
+CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.cc -o CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.s
+
 CMakeFiles/domain.dir/src/domain/driver/Driver.cc.o: CMakeFiles/domain.dir/flags.make
 CMakeFiles/domain.dir/src/domain/driver/Driver.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.cc
 CMakeFiles/domain.dir/src/domain/driver/Driver.cc.o: CMakeFiles/domain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/domain.dir/src/domain/driver/Driver.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/domain.dir/src/domain/driver/Driver.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/domain.dir/src/domain/driver/Driver.cc.o -MF CMakeFiles/domain.dir/src/domain/driver/Driver.cc.o.d -o CMakeFiles/domain.dir/src/domain/driver/Driver.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.cc
 
 CMakeFiles/domain.dir/src/domain/driver/Driver.cc.i: cmake_force
@@ -100,10 +114,24 @@ CMakeFiles/domain.dir/src/domain/driver/Driver.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/domain.dir/src/domain/driver/Driver.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.cc -o CMakeFiles/domain.dir/src/domain/driver/Driver.cc.s
 
+CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.o: CMakeFiles/domain.dir/flags.make
+CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/DriverHistory.cc
+CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.o: CMakeFiles/domain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.o -MF CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.o.d -o CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/DriverHistory.cc
+
+CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/DriverHistory.cc > CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.i
+
+CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/DriverHistory.cc -o CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.s
+
 CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o: CMakeFiles/domain.dir/flags.make
 CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.cc
 CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o: CMakeFiles/domain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o -MF CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o.d -o CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.cc
 
 CMakeFiles/domain.dir/src/domain/trip/Trip.cc.i: cmake_force
@@ -114,10 +142,38 @@ CMakeFiles/domain.dir/src/domain/trip/Trip.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/domain.dir/src/domain/trip/Trip.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.cc -o CMakeFiles/domain.dir/src/domain/trip/Trip.cc.s
 
+CMakeFiles/domain.dir/src/domain/trip/Matching.cc.o: CMakeFiles/domain.dir/flags.make
+CMakeFiles/domain.dir/src/domain/trip/Matching.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.cc
+CMakeFiles/domain.dir/src/domain/trip/Matching.cc.o: CMakeFiles/domain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/domain.dir/src/domain/trip/Matching.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/domain.dir/src/domain/trip/Matching.cc.o -MF CMakeFiles/domain.dir/src/domain/trip/Matching.cc.o.d -o CMakeFiles/domain.dir/src/domain/trip/Matching.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.cc
+
+CMakeFiles/domain.dir/src/domain/trip/Matching.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/domain.dir/src/domain/trip/Matching.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.cc > CMakeFiles/domain.dir/src/domain/trip/Matching.cc.i
+
+CMakeFiles/domain.dir/src/domain/trip/Matching.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/domain.dir/src/domain/trip/Matching.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.cc -o CMakeFiles/domain.dir/src/domain/trip/Matching.cc.s
+
+CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.o: CMakeFiles/domain.dir/flags.make
+CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/RoutePlan.cc
+CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.o: CMakeFiles/domain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.o -MF CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.o.d -o CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/RoutePlan.cc
+
+CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/RoutePlan.cc > CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.i
+
+CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/RoutePlan.cc -o CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.s
+
 CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.o: CMakeFiles/domain.dir/flags.make
 CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.cc
 CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.o: CMakeFiles/domain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.o -MF CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.o.d -o CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.cc
 
 CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.i: cmake_force
@@ -131,7 +187,7 @@ CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.s: cmake_force
 CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.o: CMakeFiles/domain.dir/flags.make
 CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoFence.cc
 CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.o: CMakeFiles/domain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.o -MF CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.o.d -o CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoFence.cc
 
 CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.i: cmake_force
@@ -145,7 +201,7 @@ CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.s: cmake_force
 CMakeFiles/domain.dir/src/domain/geo/Place.cc.o: CMakeFiles/domain.dir/flags.make
 CMakeFiles/domain.dir/src/domain/geo/Place.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/Place.cc
 CMakeFiles/domain.dir/src/domain/geo/Place.cc.o: CMakeFiles/domain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/domain.dir/src/domain/geo/Place.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/domain.dir/src/domain/geo/Place.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/domain.dir/src/domain/geo/Place.cc.o -MF CMakeFiles/domain.dir/src/domain/geo/Place.cc.o.d -o CMakeFiles/domain.dir/src/domain/geo/Place.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/Place.cc
 
 CMakeFiles/domain.dir/src/domain/geo/Place.cc.i: cmake_force
@@ -159,7 +215,7 @@ CMakeFiles/domain.dir/src/domain/geo/Place.cc.s: cmake_force
 CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.o: CMakeFiles/domain.dir/flags.make
 CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/FareCalculator.cc
 CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.o: CMakeFiles/domain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.o -MF CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.o.d -o CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/FareCalculator.cc
 
 CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.i: cmake_force
@@ -173,7 +229,7 @@ CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.s: cmake_force
 CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.o: CMakeFiles/domain.dir/flags.make
 CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.cc
 CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.o: CMakeFiles/domain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.o -MF CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.o.d -o CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.cc
 
 CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.i: cmake_force
@@ -187,8 +243,12 @@ CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.s: cmake_force
 # Object files for target domain
 domain_OBJECTS = \
 "CMakeFiles/domain.dir/src/domain/rider/Rider.cc.o" \
+"CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o" \
 "CMakeFiles/domain.dir/src/domain/driver/Driver.cc.o" \
+"CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.o" \
 "CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o" \
+"CMakeFiles/domain.dir/src/domain/trip/Matching.cc.o" \
+"CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.o" \
 "CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.o" \
 "CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.o" \
 "CMakeFiles/domain.dir/src/domain/geo/Place.cc.o" \
@@ -199,8 +259,12 @@ domain_OBJECTS = \
 domain_EXTERNAL_OBJECTS =
 
 libdomain.a: CMakeFiles/domain.dir/src/domain/rider/Rider.cc.o
+libdomain.a: CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o
 libdomain.a: CMakeFiles/domain.dir/src/domain/driver/Driver.cc.o
+libdomain.a: CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.o
 libdomain.a: CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o
+libdomain.a: CMakeFiles/domain.dir/src/domain/trip/Matching.cc.o
+libdomain.a: CMakeFiles/domain.dir/src/domain/routing/RoutePlan.cc.o
 libdomain.a: CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.o
 libdomain.a: CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.o
 libdomain.a: CMakeFiles/domain.dir/src/domain/geo/Place.cc.o
@@ -208,7 +272,7 @@ libdomain.a: CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.o
 libdomain.a: CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.o
 libdomain.a: CMakeFiles/domain.dir/build.make
 libdomain.a: CMakeFiles/domain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libdomain.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libdomain.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/domain.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/domain.dir/link.txt --verbose=$(VERBOSE)
 

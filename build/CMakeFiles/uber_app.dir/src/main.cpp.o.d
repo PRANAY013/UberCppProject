@@ -794,8 +794,14 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/../trip/Trip.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/DriverHistory.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/../trip/Trip.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/../driver/Driver.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoFence.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/Place.h \
