@@ -166,6 +166,126 @@ src/domain/driver/Driver.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/driver/Driver.cc.s
 .PHONY : src/domain/driver/Driver.cc.s
 
+src/domain/geo/GeoFence.o: src/domain/geo/GeoFence.cc.o
+.PHONY : src/domain/geo/GeoFence.o
+
+# target to build an object file
+src/domain/geo/GeoFence.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.o
+.PHONY : src/domain/geo/GeoFence.cc.o
+
+src/domain/geo/GeoFence.i: src/domain/geo/GeoFence.cc.i
+.PHONY : src/domain/geo/GeoFence.i
+
+# target to preprocess a source file
+src/domain/geo/GeoFence.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.i
+.PHONY : src/domain/geo/GeoFence.cc.i
+
+src/domain/geo/GeoFence.s: src/domain/geo/GeoFence.cc.s
+.PHONY : src/domain/geo/GeoFence.s
+
+# target to generate assembly for a file
+src/domain/geo/GeoFence.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/geo/GeoFence.cc.s
+.PHONY : src/domain/geo/GeoFence.cc.s
+
+src/domain/geo/GeoPoint.o: src/domain/geo/GeoPoint.cc.o
+.PHONY : src/domain/geo/GeoPoint.o
+
+# target to build an object file
+src/domain/geo/GeoPoint.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.o
+.PHONY : src/domain/geo/GeoPoint.cc.o
+
+src/domain/geo/GeoPoint.i: src/domain/geo/GeoPoint.cc.i
+.PHONY : src/domain/geo/GeoPoint.i
+
+# target to preprocess a source file
+src/domain/geo/GeoPoint.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.i
+.PHONY : src/domain/geo/GeoPoint.cc.i
+
+src/domain/geo/GeoPoint.s: src/domain/geo/GeoPoint.cc.s
+.PHONY : src/domain/geo/GeoPoint.s
+
+# target to generate assembly for a file
+src/domain/geo/GeoPoint.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/geo/GeoPoint.cc.s
+.PHONY : src/domain/geo/GeoPoint.cc.s
+
+src/domain/geo/Place.o: src/domain/geo/Place.cc.o
+.PHONY : src/domain/geo/Place.o
+
+# target to build an object file
+src/domain/geo/Place.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/geo/Place.cc.o
+.PHONY : src/domain/geo/Place.cc.o
+
+src/domain/geo/Place.i: src/domain/geo/Place.cc.i
+.PHONY : src/domain/geo/Place.i
+
+# target to preprocess a source file
+src/domain/geo/Place.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/geo/Place.cc.i
+.PHONY : src/domain/geo/Place.cc.i
+
+src/domain/geo/Place.s: src/domain/geo/Place.cc.s
+.PHONY : src/domain/geo/Place.s
+
+# target to generate assembly for a file
+src/domain/geo/Place.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/geo/Place.cc.s
+.PHONY : src/domain/geo/Place.cc.s
+
+src/domain/pricing/FareCalculator.o: src/domain/pricing/FareCalculator.cc.o
+.PHONY : src/domain/pricing/FareCalculator.o
+
+# target to build an object file
+src/domain/pricing/FareCalculator.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.o
+.PHONY : src/domain/pricing/FareCalculator.cc.o
+
+src/domain/pricing/FareCalculator.i: src/domain/pricing/FareCalculator.cc.i
+.PHONY : src/domain/pricing/FareCalculator.i
+
+# target to preprocess a source file
+src/domain/pricing/FareCalculator.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.i
+.PHONY : src/domain/pricing/FareCalculator.cc.i
+
+src/domain/pricing/FareCalculator.s: src/domain/pricing/FareCalculator.cc.s
+.PHONY : src/domain/pricing/FareCalculator.s
+
+# target to generate assembly for a file
+src/domain/pricing/FareCalculator.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/pricing/FareCalculator.cc.s
+.PHONY : src/domain/pricing/FareCalculator.cc.s
+
+src/domain/pricing/SurgeModel.o: src/domain/pricing/SurgeModel.cc.o
+.PHONY : src/domain/pricing/SurgeModel.o
+
+# target to build an object file
+src/domain/pricing/SurgeModel.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.o
+.PHONY : src/domain/pricing/SurgeModel.cc.o
+
+src/domain/pricing/SurgeModel.i: src/domain/pricing/SurgeModel.cc.i
+.PHONY : src/domain/pricing/SurgeModel.i
+
+# target to preprocess a source file
+src/domain/pricing/SurgeModel.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.i
+.PHONY : src/domain/pricing/SurgeModel.cc.i
+
+src/domain/pricing/SurgeModel.s: src/domain/pricing/SurgeModel.cc.s
+.PHONY : src/domain/pricing/SurgeModel.s
+
+# target to generate assembly for a file
+src/domain/pricing/SurgeModel.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/pricing/SurgeModel.cc.s
+.PHONY : src/domain/pricing/SurgeModel.cc.s
+
 src/domain/rider/Rider.o: src/domain/rider/Rider.cc.o
 .PHONY : src/domain/rider/Rider.o
 
@@ -251,6 +371,21 @@ help:
 	@echo "... src/domain/driver/Driver.o"
 	@echo "... src/domain/driver/Driver.i"
 	@echo "... src/domain/driver/Driver.s"
+	@echo "... src/domain/geo/GeoFence.o"
+	@echo "... src/domain/geo/GeoFence.i"
+	@echo "... src/domain/geo/GeoFence.s"
+	@echo "... src/domain/geo/GeoPoint.o"
+	@echo "... src/domain/geo/GeoPoint.i"
+	@echo "... src/domain/geo/GeoPoint.s"
+	@echo "... src/domain/geo/Place.o"
+	@echo "... src/domain/geo/Place.i"
+	@echo "... src/domain/geo/Place.s"
+	@echo "... src/domain/pricing/FareCalculator.o"
+	@echo "... src/domain/pricing/FareCalculator.i"
+	@echo "... src/domain/pricing/FareCalculator.s"
+	@echo "... src/domain/pricing/SurgeModel.o"
+	@echo "... src/domain/pricing/SurgeModel.i"
+	@echo "... src/domain/pricing/SurgeModel.s"
 	@echo "... src/domain/rider/Rider.o"
 	@echo "... src/domain/rider/Rider.i"
 	@echo "... src/domain/rider/Rider.s"

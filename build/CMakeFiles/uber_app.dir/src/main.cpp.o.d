@@ -795,4 +795,9 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoFence.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/Place.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/FareCalculator.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h
