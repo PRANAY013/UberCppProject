@@ -16,6 +16,7 @@ public:
     Trip(State state);
 
     State getState() const;
+    void setState(State newState);
 
 private:
     State state;

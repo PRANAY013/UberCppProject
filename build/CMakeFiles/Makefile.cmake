@@ -57,5 +57,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/domain.dir/DependInfo.cmake"
+  "CMakeFiles/application.dir/DependInfo.cmake"
+  "CMakeFiles/infrastructure.dir/DependInfo.cmake"
   "CMakeFiles/uber_app.dir/DependInfo.cmake"
   )

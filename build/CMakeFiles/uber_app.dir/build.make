@@ -95,6 +95,8 @@ uber_app_EXTERNAL_OBJECTS =
 
 uber_app: CMakeFiles/uber_app.dir/src/main.cpp.o
 uber_app: CMakeFiles/uber_app.dir/build.make
+uber_app: libapplication.a
+uber_app: libinfrastructure.a
 uber_app: libdomain.a
 uber_app: CMakeFiles/uber_app.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable uber_app"

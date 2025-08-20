@@ -64,11 +64,15 @@ CMAKE_BINARY_DIR = /Users/pranay/Pranay/PROG/UberCppProject/build
 
 # The main recursive "all" target.
 all: CMakeFiles/domain.dir/all
+all: CMakeFiles/application.dir/all
+all: CMakeFiles/infrastructure.dir/all
 all: CMakeFiles/uber_app.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/domain.dir/codegen
+codegen: CMakeFiles/application.dir/codegen
+codegen: CMakeFiles/infrastructure.dir/codegen
 codegen: CMakeFiles/uber_app.dir/codegen
 .PHONY : codegen
 
@@ -78,6 +82,8 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/domain.dir/clean
+clean: CMakeFiles/application.dir/clean
+clean: CMakeFiles/infrastructure.dir/clean
 clean: CMakeFiles/uber_app.dir/clean
 .PHONY : clean
 
@@ -88,7 +94,7 @@ clean: CMakeFiles/uber_app.dir/clean
 CMakeFiles/domain.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target domain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target domain"
 .PHONY : CMakeFiles/domain.dir/all
 
 # Build rule for subdir invocation for target.
@@ -105,7 +111,7 @@ domain: CMakeFiles/domain.dir/rule
 # codegen rule for target.
 CMakeFiles/domain.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Finished codegen for target domain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17 "Finished codegen for target domain"
 .PHONY : CMakeFiles/domain.dir/codegen
 
 # clean rule for target.
@@ -114,18 +120,84 @@ CMakeFiles/domain.dir/clean:
 .PHONY : CMakeFiles/domain.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/application.dir
+
+# All Build rule for target.
+CMakeFiles/application.dir/all: CMakeFiles/domain.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=1,2,3,4 "Built target application"
+.PHONY : CMakeFiles/application.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/application.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/application.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles 0
+.PHONY : CMakeFiles/application.dir/rule
+
+# Convenience name for target.
+application: CMakeFiles/application.dir/rule
+.PHONY : application
+
+# codegen rule for target.
+CMakeFiles/application.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target application"
+.PHONY : CMakeFiles/application.dir/codegen
+
+# clean rule for target.
+CMakeFiles/application.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/clean
+.PHONY : CMakeFiles/application.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/infrastructure.dir
+
+# All Build rule for target.
+CMakeFiles/infrastructure.dir/all: CMakeFiles/domain.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=18,19 "Built target infrastructure"
+.PHONY : CMakeFiles/infrastructure.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/infrastructure.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/infrastructure.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles 0
+.PHONY : CMakeFiles/infrastructure.dir/rule
+
+# Convenience name for target.
+infrastructure: CMakeFiles/infrastructure.dir/rule
+.PHONY : infrastructure
+
+# codegen rule for target.
+CMakeFiles/infrastructure.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=18,19 "Finished codegen for target infrastructure"
+.PHONY : CMakeFiles/infrastructure.dir/codegen
+
+# clean rule for target.
+CMakeFiles/infrastructure.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/clean
+.PHONY : CMakeFiles/infrastructure.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/uber_app.dir
 
 # All Build rule for target.
 CMakeFiles/uber_app.dir/all: CMakeFiles/domain.dir/all
+CMakeFiles/uber_app.dir/all: CMakeFiles/application.dir/all
+CMakeFiles/uber_app.dir/all: CMakeFiles/infrastructure.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uber_app.dir/build.make CMakeFiles/uber_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uber_app.dir/build.make CMakeFiles/uber_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=14,15 "Built target uber_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=20,21 "Built target uber_app"
 .PHONY : CMakeFiles/uber_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uber_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uber_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/uber_app.dir/rule
@@ -137,7 +209,7 @@ uber_app: CMakeFiles/uber_app.dir/rule
 # codegen rule for target.
 CMakeFiles/uber_app.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uber_app.dir/build.make CMakeFiles/uber_app.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=14,15 "Finished codegen for target uber_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=20,21 "Finished codegen for target uber_app"
 .PHONY : CMakeFiles/uber_app.dir/codegen
 
 # clean rule for target.

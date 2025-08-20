@@ -130,6 +130,32 @@ domain/fast:
 .PHONY : domain/fast
 
 #=============================================================================
+# Target rules for targets named application
+
+# Build rule for target.
+application: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application
+.PHONY : application
+
+# fast build rule for target.
+application/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/build
+.PHONY : application/fast
+
+#=============================================================================
+# Target rules for targets named infrastructure
+
+# Build rule for target.
+infrastructure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 infrastructure
+.PHONY : infrastructure
+
+# fast build rule for target.
+infrastructure/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/build
+.PHONY : infrastructure/fast
+
+#=============================================================================
 # Target rules for targets named uber_app
 
 # Build rule for target.
@@ -141,6 +167,78 @@ uber_app: cmake_check_build_system
 uber_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uber_app.dir/build.make CMakeFiles/uber_app.dir/build
 .PHONY : uber_app/fast
+
+src/application/UseCases/AssignDriverUseCase.o: src/application/UseCases/AssignDriverUseCase.cc.o
+.PHONY : src/application/UseCases/AssignDriverUseCase.o
+
+# target to build an object file
+src/application/UseCases/AssignDriverUseCase.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.o
+.PHONY : src/application/UseCases/AssignDriverUseCase.cc.o
+
+src/application/UseCases/AssignDriverUseCase.i: src/application/UseCases/AssignDriverUseCase.cc.i
+.PHONY : src/application/UseCases/AssignDriverUseCase.i
+
+# target to preprocess a source file
+src/application/UseCases/AssignDriverUseCase.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.i
+.PHONY : src/application/UseCases/AssignDriverUseCase.cc.i
+
+src/application/UseCases/AssignDriverUseCase.s: src/application/UseCases/AssignDriverUseCase.cc.s
+.PHONY : src/application/UseCases/AssignDriverUseCase.s
+
+# target to generate assembly for a file
+src/application/UseCases/AssignDriverUseCase.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.s
+.PHONY : src/application/UseCases/AssignDriverUseCase.cc.s
+
+src/application/UseCases/QuoteFareUseCase.o: src/application/UseCases/QuoteFareUseCase.cc.o
+.PHONY : src/application/UseCases/QuoteFareUseCase.o
+
+# target to build an object file
+src/application/UseCases/QuoteFareUseCase.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/QuoteFareUseCase.cc.o
+.PHONY : src/application/UseCases/QuoteFareUseCase.cc.o
+
+src/application/UseCases/QuoteFareUseCase.i: src/application/UseCases/QuoteFareUseCase.cc.i
+.PHONY : src/application/UseCases/QuoteFareUseCase.i
+
+# target to preprocess a source file
+src/application/UseCases/QuoteFareUseCase.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/QuoteFareUseCase.cc.i
+.PHONY : src/application/UseCases/QuoteFareUseCase.cc.i
+
+src/application/UseCases/QuoteFareUseCase.s: src/application/UseCases/QuoteFareUseCase.cc.s
+.PHONY : src/application/UseCases/QuoteFareUseCase.s
+
+# target to generate assembly for a file
+src/application/UseCases/QuoteFareUseCase.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/QuoteFareUseCase.cc.s
+.PHONY : src/application/UseCases/QuoteFareUseCase.cc.s
+
+src/application/UseCases/RequestRideUseCase.o: src/application/UseCases/RequestRideUseCase.cc.o
+.PHONY : src/application/UseCases/RequestRideUseCase.o
+
+# target to build an object file
+src/application/UseCases/RequestRideUseCase.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.o
+.PHONY : src/application/UseCases/RequestRideUseCase.cc.o
+
+src/application/UseCases/RequestRideUseCase.i: src/application/UseCases/RequestRideUseCase.cc.i
+.PHONY : src/application/UseCases/RequestRideUseCase.i
+
+# target to preprocess a source file
+src/application/UseCases/RequestRideUseCase.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.i
+.PHONY : src/application/UseCases/RequestRideUseCase.cc.i
+
+src/application/UseCases/RequestRideUseCase.s: src/application/UseCases/RequestRideUseCase.cc.s
+.PHONY : src/application/UseCases/RequestRideUseCase.s
+
+# target to generate assembly for a file
+src/application/UseCases/RequestRideUseCase.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.s
+.PHONY : src/application/UseCases/RequestRideUseCase.cc.s
 
 src/domain/driver/Driver.o: src/domain/driver/Driver.cc.o
 .PHONY : src/domain/driver/Driver.o
@@ -430,6 +528,30 @@ src/domain/trip/Trip.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/trip/Trip.cc.s
 .PHONY : src/domain/trip/Trip.cc.s
 
+src/infrastructure/routing/MockRouterAdapter.o: src/infrastructure/routing/MockRouterAdapter.cc.o
+.PHONY : src/infrastructure/routing/MockRouterAdapter.o
+
+# target to build an object file
+src/infrastructure/routing/MockRouterAdapter.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.o
+.PHONY : src/infrastructure/routing/MockRouterAdapter.cc.o
+
+src/infrastructure/routing/MockRouterAdapter.i: src/infrastructure/routing/MockRouterAdapter.cc.i
+.PHONY : src/infrastructure/routing/MockRouterAdapter.i
+
+# target to preprocess a source file
+src/infrastructure/routing/MockRouterAdapter.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.i
+.PHONY : src/infrastructure/routing/MockRouterAdapter.cc.i
+
+src/infrastructure/routing/MockRouterAdapter.s: src/infrastructure/routing/MockRouterAdapter.cc.s
+.PHONY : src/infrastructure/routing/MockRouterAdapter.s
+
+# target to generate assembly for a file
+src/infrastructure/routing/MockRouterAdapter.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.s
+.PHONY : src/infrastructure/routing/MockRouterAdapter.cc.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -462,8 +584,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... application"
 	@echo "... domain"
+	@echo "... infrastructure"
 	@echo "... uber_app"
+	@echo "... src/application/UseCases/AssignDriverUseCase.o"
+	@echo "... src/application/UseCases/AssignDriverUseCase.i"
+	@echo "... src/application/UseCases/AssignDriverUseCase.s"
+	@echo "... src/application/UseCases/QuoteFareUseCase.o"
+	@echo "... src/application/UseCases/QuoteFareUseCase.i"
+	@echo "... src/application/UseCases/QuoteFareUseCase.s"
+	@echo "... src/application/UseCases/RequestRideUseCase.o"
+	@echo "... src/application/UseCases/RequestRideUseCase.i"
+	@echo "... src/application/UseCases/RequestRideUseCase.s"
 	@echo "... src/domain/driver/Driver.o"
 	@echo "... src/domain/driver/Driver.i"
 	@echo "... src/domain/driver/Driver.s"
@@ -500,6 +633,9 @@ help:
 	@echo "... src/domain/trip/Trip.o"
 	@echo "... src/domain/trip/Trip.i"
 	@echo "... src/domain/trip/Trip.s"
+	@echo "... src/infrastructure/routing/MockRouterAdapter.o"
+	@echo "... src/infrastructure/routing/MockRouterAdapter.i"
+	@echo "... src/infrastructure/routing/MockRouterAdapter.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

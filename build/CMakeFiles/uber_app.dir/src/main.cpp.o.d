@@ -793,17 +793,23 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/../trip/Trip.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/DriverHistory.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/../trip/Trip.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/../driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/RequestRideUseCase.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/geo/GeoPoint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/Trip.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/Router.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/../geo/GeoPoint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/RoutePlan.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/Matching.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/../driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/QuoteFareUseCase.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/pricing/FareCalculator.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/pricing/SurgeModel.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/AssignDriverUseCase.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/driver/Driver.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoFence.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/Place.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/MockRouterAdapter.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/../../domain/routing/Router.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/FareCalculator.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h

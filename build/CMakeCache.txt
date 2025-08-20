@@ -240,6 +240,12 @@ UberCppProject_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 UberCppProject_SOURCE_DIR:STATIC=/Users/pranay/Pranay/PROG/UberCppProject
 
+//Dependencies for the target
+application_LIB_DEPENDS:STATIC=general;domain;
+
+//Dependencies for the target
+infrastructure_LIB_DEPENDS:STATIC=general;domain;
+
 
 ########################
 # INTERNAL cache entries

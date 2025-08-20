@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add a library for our domain objects
+# --- Domain Library ---
+# Contains the core business logic and entities.
 add_library(domain
     src/domain/rider/Rider.h
     src/domain/rider/Rider.cc
@@ -33,6 +35,32 @@ add_library(domain
     src/domain/pricing/SurgeModel.cc
 )
 
-# Add the main executable
+# --- Application Library ---
+# Contains the application-specific use cases.
+add_library(application
+    src/application/UseCases/RequestRideUseCase.h
+    src/application/UseCases/RequestRideUseCase.cc
+    src/application/UseCases/QuoteFareUseCase.h
+    src/application/UseCases/QuoteFareUseCase.cc
+    src/application/UseCases/AssignDriverUseCase.h
+    src/application/UseCases/AssignDriverUseCase.cc
+)
+
+# The application layer depends on the domain layer.
+target_link_libraries(application domain)
+
+# --- Infrastructure Library ---
+# Contains concrete implementations of domain interfaces.
+add_library(infrastructure
+    src/infrastructure/routing/MockRouterAdapter.h
+    src/infrastructure/routing/MockRouterAdapter.cc
+)
+
+# The infrastructure layer depends on the domain layer.
+target_link_libraries(infrastructure domain)
+
+
+# --- Main Executable ---
+# The entry point of the application.
 add_executable(uber_app src/main.cpp)
-target_link_libraries(uber_app domain)
+target_link_libraries(uber_app application infrastructure) # Now links to application instead of domain

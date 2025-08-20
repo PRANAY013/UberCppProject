@@ -6,3 +6,7 @@ Trip::Trip(State state)
 Trip::State Trip::getState() const {
     return state;
 }
+
+void Trip::setState(State newState) {
+    state = newState;
+}

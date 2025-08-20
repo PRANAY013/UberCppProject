@@ -1,0 +1,2 @@
+/usr/bin/ar qc libinfrastructure.a CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.o
+/usr/bin/ranlib libinfrastructure.a
