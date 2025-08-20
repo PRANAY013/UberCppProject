@@ -1,7 +1,11 @@
 #include "Driver.h"
 
-Driver::Driver(Status status, double rating, const std::string& vehicle)
-    : status(status), rating(rating), vehicle(vehicle) {}
+Driver::Driver(int id, Status status, double rating, const std::string& vehicle)
+    : id(id), status(status), rating(rating), vehicle(vehicle) {}
+
+int Driver::getId() const {
+    return id;
+}
 
 Driver::Status Driver::getStatus() const {
     return status;

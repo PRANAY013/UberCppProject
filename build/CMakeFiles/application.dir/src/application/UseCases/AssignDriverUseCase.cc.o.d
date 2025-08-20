@@ -2,6 +2,7 @@ CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.o: \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/AssignDriverUseCase.cc \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/AssignDriverUseCase.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/Trip.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/../geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/driver/Driver.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \

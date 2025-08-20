@@ -12,16 +12,19 @@ public:
         Riding
     };
 
-    Driver(Status status, double rating, const std::string& vehicle);
+    Driver(int id, Status status, double rating, const std::string& vehicle);
 
+    int getId() const;
     Status getStatus() const;
     double getRating() const;
     const std::string& getVehicle() const;
 
 private:
+    int id;
     Status status;
     double rating;
-    std::string vehicle; // Will likely become a Vehicle class later
+    std::string vehicle;
 };
+
 
 #endif // DRIVER_H

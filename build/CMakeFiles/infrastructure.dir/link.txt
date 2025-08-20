@@ -1,2 +1,2 @@
-/usr/bin/ar qc libinfrastructure.a CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.o
+/usr/bin/ar qc libinfrastructure.a CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.o CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o
 /usr/bin/ranlib libinfrastructure.a

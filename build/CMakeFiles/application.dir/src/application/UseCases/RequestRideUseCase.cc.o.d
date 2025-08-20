@@ -3,6 +3,7 @@ CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.o: \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/RequestRideUseCase.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/Trip.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/../geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/Router.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/../geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/RoutePlan.h \
@@ -761,6 +762,8 @@ CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/Matching.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/../driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../infrastructure/persistence/IRepository.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/rider/Rider.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/driver/Driver.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \

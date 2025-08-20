@@ -44,6 +44,10 @@ add_library(application
     src/application/UseCases/QuoteFareUseCase.cc
     src/application/UseCases/AssignDriverUseCase.h
     src/application/UseCases/AssignDriverUseCase.cc
+    src/application/UseCases/UpdateLocationUseCase.h
+    src/application/UseCases/UpdateLocationUseCase.cc
+    src/application/UseCases/ShareRideStatusUseCase.h
+    src/application/UseCases/ShareRideStatusUseCase.cc
 )
 
 # The application layer depends on the domain layer.
@@ -54,6 +58,13 @@ target_link_libraries(application domain)
 add_library(infrastructure
     src/infrastructure/routing/MockRouterAdapter.h
     src/infrastructure/routing/MockRouterAdapter.cc
+    src/infrastructure/persistence/IRepository.h
+    src/infrastructure/persistence/InMemoryRiderRepository.h
+    src/infrastructure/persistence/InMemoryRiderRepository.cc
+    src/infrastructure/persistence/InMemoryDriverRepository.h
+    src/infrastructure/persistence/InMemoryDriverRepository.cc
+    src/infrastructure/persistence/InMemoryTripRepository.h
+    src/infrastructure/persistence/InMemoryTripRepository.cc
 )
 
 # The infrastructure layer depends on the domain layer.

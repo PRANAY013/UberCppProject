@@ -5,6 +5,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/application.dir/src/application/UseCases/QuoteFareUseCase.cc.o.d"
   "CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.o"
   "CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.o.d"
+  "CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o"
+  "CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o.d"
+  "CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o"
+  "CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o.d"
   "libapplication.a"
   "libapplication.pdb"
 )

@@ -240,6 +240,54 @@ src/application/UseCases/RequestRideUseCase.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.s
 .PHONY : src/application/UseCases/RequestRideUseCase.cc.s
 
+src/application/UseCases/ShareRideStatusUseCase.o: src/application/UseCases/ShareRideStatusUseCase.cc.o
+.PHONY : src/application/UseCases/ShareRideStatusUseCase.o
+
+# target to build an object file
+src/application/UseCases/ShareRideStatusUseCase.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o
+.PHONY : src/application/UseCases/ShareRideStatusUseCase.cc.o
+
+src/application/UseCases/ShareRideStatusUseCase.i: src/application/UseCases/ShareRideStatusUseCase.cc.i
+.PHONY : src/application/UseCases/ShareRideStatusUseCase.i
+
+# target to preprocess a source file
+src/application/UseCases/ShareRideStatusUseCase.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.i
+.PHONY : src/application/UseCases/ShareRideStatusUseCase.cc.i
+
+src/application/UseCases/ShareRideStatusUseCase.s: src/application/UseCases/ShareRideStatusUseCase.cc.s
+.PHONY : src/application/UseCases/ShareRideStatusUseCase.s
+
+# target to generate assembly for a file
+src/application/UseCases/ShareRideStatusUseCase.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.s
+.PHONY : src/application/UseCases/ShareRideStatusUseCase.cc.s
+
+src/application/UseCases/UpdateLocationUseCase.o: src/application/UseCases/UpdateLocationUseCase.cc.o
+.PHONY : src/application/UseCases/UpdateLocationUseCase.o
+
+# target to build an object file
+src/application/UseCases/UpdateLocationUseCase.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o
+.PHONY : src/application/UseCases/UpdateLocationUseCase.cc.o
+
+src/application/UseCases/UpdateLocationUseCase.i: src/application/UseCases/UpdateLocationUseCase.cc.i
+.PHONY : src/application/UseCases/UpdateLocationUseCase.i
+
+# target to preprocess a source file
+src/application/UseCases/UpdateLocationUseCase.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.i
+.PHONY : src/application/UseCases/UpdateLocationUseCase.cc.i
+
+src/application/UseCases/UpdateLocationUseCase.s: src/application/UseCases/UpdateLocationUseCase.cc.s
+.PHONY : src/application/UseCases/UpdateLocationUseCase.s
+
+# target to generate assembly for a file
+src/application/UseCases/UpdateLocationUseCase.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.s
+.PHONY : src/application/UseCases/UpdateLocationUseCase.cc.s
+
 src/domain/driver/Driver.o: src/domain/driver/Driver.cc.o
 .PHONY : src/domain/driver/Driver.o
 
@@ -528,6 +576,78 @@ src/domain/trip/Trip.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/trip/Trip.cc.s
 .PHONY : src/domain/trip/Trip.cc.s
 
+src/infrastructure/persistence/InMemoryDriverRepository.o: src/infrastructure/persistence/InMemoryDriverRepository.cc.o
+.PHONY : src/infrastructure/persistence/InMemoryDriverRepository.o
+
+# target to build an object file
+src/infrastructure/persistence/InMemoryDriverRepository.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o
+.PHONY : src/infrastructure/persistence/InMemoryDriverRepository.cc.o
+
+src/infrastructure/persistence/InMemoryDriverRepository.i: src/infrastructure/persistence/InMemoryDriverRepository.cc.i
+.PHONY : src/infrastructure/persistence/InMemoryDriverRepository.i
+
+# target to preprocess a source file
+src/infrastructure/persistence/InMemoryDriverRepository.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.i
+.PHONY : src/infrastructure/persistence/InMemoryDriverRepository.cc.i
+
+src/infrastructure/persistence/InMemoryDriverRepository.s: src/infrastructure/persistence/InMemoryDriverRepository.cc.s
+.PHONY : src/infrastructure/persistence/InMemoryDriverRepository.s
+
+# target to generate assembly for a file
+src/infrastructure/persistence/InMemoryDriverRepository.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.s
+.PHONY : src/infrastructure/persistence/InMemoryDriverRepository.cc.s
+
+src/infrastructure/persistence/InMemoryRiderRepository.o: src/infrastructure/persistence/InMemoryRiderRepository.cc.o
+.PHONY : src/infrastructure/persistence/InMemoryRiderRepository.o
+
+# target to build an object file
+src/infrastructure/persistence/InMemoryRiderRepository.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o
+.PHONY : src/infrastructure/persistence/InMemoryRiderRepository.cc.o
+
+src/infrastructure/persistence/InMemoryRiderRepository.i: src/infrastructure/persistence/InMemoryRiderRepository.cc.i
+.PHONY : src/infrastructure/persistence/InMemoryRiderRepository.i
+
+# target to preprocess a source file
+src/infrastructure/persistence/InMemoryRiderRepository.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.i
+.PHONY : src/infrastructure/persistence/InMemoryRiderRepository.cc.i
+
+src/infrastructure/persistence/InMemoryRiderRepository.s: src/infrastructure/persistence/InMemoryRiderRepository.cc.s
+.PHONY : src/infrastructure/persistence/InMemoryRiderRepository.s
+
+# target to generate assembly for a file
+src/infrastructure/persistence/InMemoryRiderRepository.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.s
+.PHONY : src/infrastructure/persistence/InMemoryRiderRepository.cc.s
+
+src/infrastructure/persistence/InMemoryTripRepository.o: src/infrastructure/persistence/InMemoryTripRepository.cc.o
+.PHONY : src/infrastructure/persistence/InMemoryTripRepository.o
+
+# target to build an object file
+src/infrastructure/persistence/InMemoryTripRepository.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o
+.PHONY : src/infrastructure/persistence/InMemoryTripRepository.cc.o
+
+src/infrastructure/persistence/InMemoryTripRepository.i: src/infrastructure/persistence/InMemoryTripRepository.cc.i
+.PHONY : src/infrastructure/persistence/InMemoryTripRepository.i
+
+# target to preprocess a source file
+src/infrastructure/persistence/InMemoryTripRepository.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.i
+.PHONY : src/infrastructure/persistence/InMemoryTripRepository.cc.i
+
+src/infrastructure/persistence/InMemoryTripRepository.s: src/infrastructure/persistence/InMemoryTripRepository.cc.s
+.PHONY : src/infrastructure/persistence/InMemoryTripRepository.s
+
+# target to generate assembly for a file
+src/infrastructure/persistence/InMemoryTripRepository.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.s
+.PHONY : src/infrastructure/persistence/InMemoryTripRepository.cc.s
+
 src/infrastructure/routing/MockRouterAdapter.o: src/infrastructure/routing/MockRouterAdapter.cc.o
 .PHONY : src/infrastructure/routing/MockRouterAdapter.o
 
@@ -597,6 +717,12 @@ help:
 	@echo "... src/application/UseCases/RequestRideUseCase.o"
 	@echo "... src/application/UseCases/RequestRideUseCase.i"
 	@echo "... src/application/UseCases/RequestRideUseCase.s"
+	@echo "... src/application/UseCases/ShareRideStatusUseCase.o"
+	@echo "... src/application/UseCases/ShareRideStatusUseCase.i"
+	@echo "... src/application/UseCases/ShareRideStatusUseCase.s"
+	@echo "... src/application/UseCases/UpdateLocationUseCase.o"
+	@echo "... src/application/UseCases/UpdateLocationUseCase.i"
+	@echo "... src/application/UseCases/UpdateLocationUseCase.s"
 	@echo "... src/domain/driver/Driver.o"
 	@echo "... src/domain/driver/Driver.i"
 	@echo "... src/domain/driver/Driver.s"
@@ -633,6 +759,15 @@ help:
 	@echo "... src/domain/trip/Trip.o"
 	@echo "... src/domain/trip/Trip.i"
 	@echo "... src/domain/trip/Trip.s"
+	@echo "... src/infrastructure/persistence/InMemoryDriverRepository.o"
+	@echo "... src/infrastructure/persistence/InMemoryDriverRepository.i"
+	@echo "... src/infrastructure/persistence/InMemoryDriverRepository.s"
+	@echo "... src/infrastructure/persistence/InMemoryRiderRepository.o"
+	@echo "... src/infrastructure/persistence/InMemoryRiderRepository.i"
+	@echo "... src/infrastructure/persistence/InMemoryRiderRepository.s"
+	@echo "... src/infrastructure/persistence/InMemoryTripRepository.o"
+	@echo "... src/infrastructure/persistence/InMemoryTripRepository.i"
+	@echo "... src/infrastructure/persistence/InMemoryTripRepository.s"
 	@echo "... src/infrastructure/routing/MockRouterAdapter.o"
 	@echo "... src/infrastructure/routing/MockRouterAdapter.i"
 	@echo "... src/infrastructure/routing/MockRouterAdapter.s"

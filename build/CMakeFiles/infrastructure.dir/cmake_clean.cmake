@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o"
+  "CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o.d"
+  "CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o"
+  "CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o.d"
+  "CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o"
+  "CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o.d"
   "CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.o"
   "CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.o.d"
   "libinfrastructure.a"

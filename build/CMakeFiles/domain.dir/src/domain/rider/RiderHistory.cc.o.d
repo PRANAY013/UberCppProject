@@ -2,6 +2,7 @@ CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o: \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.cc \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/../trip/Trip.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/../trip/../geo/GeoPoint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h \

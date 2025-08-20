@@ -795,32 +795,50 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/FareCalculator.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/RoutePlan.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/Router.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/IRepository.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/AssignDriverUseCase.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/QuoteFareUseCase.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/RequestRideUseCase.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/ShareRideStatusUseCase.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/UpdateLocationUseCase.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/FareCalculator.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/IRepository.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryRiderRepository.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/Router.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/MockRouterAdapter.h
 
 
+/Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryRiderRepository.h:
+
 /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/RequestRideUseCase.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/IRepository.h:
 
 /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h:
 
 /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/Router.h:
 
 /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/RoutePlan.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h:
 
 /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h:
 
@@ -861,6 +879,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/nl_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/types.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/ShareRideStatusUseCase.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/errno.h:
 
@@ -1260,8 +1280,6 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h:
 
-/Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_member_pointer.h:
@@ -1339,6 +1357,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/AssignDriverUseCase.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h:
 
@@ -1806,6 +1826,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_end.h:
 
+/Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/UpdateLocationUseCase.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/set_symmetric_difference.h:
@@ -1835,6 +1857,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__configuration/compiler.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h:
 
 /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/FareCalculator.h:
 

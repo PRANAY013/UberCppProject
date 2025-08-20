@@ -796,20 +796,33 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/RequestRideUseCase.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/Trip.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/../geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/Router.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/../geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/RoutePlan.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/Matching.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/../driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../infrastructure/persistence/IRepository.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/rider/Rider.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/driver/Driver.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/QuoteFareUseCase.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/pricing/FareCalculator.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/pricing/SurgeModel.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/AssignDriverUseCase.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/UpdateLocationUseCase.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/ShareRideStatusUseCase.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/MockRouterAdapter.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/../../domain/routing/Router.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/FareCalculator.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryRiderRepository.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/IRepository.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/../../domain/rider/Rider.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryDriverRepository.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/../../domain/driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryTripRepository.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/../../domain/trip/Trip.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h

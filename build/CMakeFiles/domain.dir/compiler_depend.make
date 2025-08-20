@@ -1400,6 +1400,7 @@ CMakeFiles/domain.dir/src/domain/driver/DriverHistory.cc.o: /Users/pranay/Pranay
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/DriverHistory.h
 
@@ -4215,6 +4216,7 @@ CMakeFiles/domain.dir/src/domain/rider/RiderHistory.cc.o: /Users/pranay/Pranay/P
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/RiderHistory.h
 
@@ -5730,10 +5732,12 @@ CMakeFiles/domain.dir/src/domain/trip/Matching.cc.o: /Users/pranay/Pranay/PROG/U
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h
 
 CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.cc \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h
 
 
@@ -5749,9 +5753,9 @@ CMakeFiles/domain.dir/src/domain/trip/Trip.cc.o: /Users/pranay/Pranay/PROG/UberC
 
 /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/Place.cc:
 
-/Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h:
-
 /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_wchar.h:
 

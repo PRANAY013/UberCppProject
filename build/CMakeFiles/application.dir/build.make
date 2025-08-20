@@ -114,11 +114,41 @@ CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/AssignDriverUseCase.cc -o CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.s
 
+CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o: CMakeFiles/application.dir/flags.make
+CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/UpdateLocationUseCase.cc
+CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o: CMakeFiles/application.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o -MF CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o.d -o CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/UpdateLocationUseCase.cc
+
+CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/UpdateLocationUseCase.cc > CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.i
+
+CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/UpdateLocationUseCase.cc -o CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.s
+
+CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o: CMakeFiles/application.dir/flags.make
+CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/ShareRideStatusUseCase.cc
+CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o: CMakeFiles/application.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o -MF CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o.d -o CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/ShareRideStatusUseCase.cc
+
+CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/ShareRideStatusUseCase.cc > CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.i
+
+CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/ShareRideStatusUseCase.cc -o CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.s
+
 # Object files for target application
 application_OBJECTS = \
 "CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.o" \
 "CMakeFiles/application.dir/src/application/UseCases/QuoteFareUseCase.cc.o" \
-"CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.o"
+"CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.o" \
+"CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o" \
+"CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o"
 
 # External object files for target application
 application_EXTERNAL_OBJECTS =
@@ -126,9 +156,11 @@ application_EXTERNAL_OBJECTS =
 libapplication.a: CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.o
 libapplication.a: CMakeFiles/application.dir/src/application/UseCases/QuoteFareUseCase.cc.o
 libapplication.a: CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.o
+libapplication.a: CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o
+libapplication.a: CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o
 libapplication.a: CMakeFiles/application.dir/build.make
 libapplication.a: CMakeFiles/application.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libapplication.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libapplication.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/application.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/application.dir/link.txt --verbose=$(VERBOSE)
 

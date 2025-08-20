@@ -1,2 +1,2 @@
-/usr/bin/ar qc libapplication.a CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.o CMakeFiles/application.dir/src/application/UseCases/QuoteFareUseCase.cc.o CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.o
+/usr/bin/ar qc libapplication.a CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.o CMakeFiles/application.dir/src/application/UseCases/QuoteFareUseCase.cc.o CMakeFiles/application.dir/src/application/UseCases/AssignDriverUseCase.cc.o CMakeFiles/application.dir/src/application/UseCases/UpdateLocationUseCase.cc.o CMakeFiles/application.dir/src/application/UseCases/ShareRideStatusUseCase.cc.o
 /usr/bin/ranlib libapplication.a
