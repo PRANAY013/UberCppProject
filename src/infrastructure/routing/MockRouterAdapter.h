@@ -3,11 +3,15 @@
 
 #include "../../domain/routing/Router.h"
 
-class MockRouterAdapter : public Router {
+namespace infrastructure {
+namespace routing {
+class MockRouterAdapter : public domain::routing::Router {
 public:
     MockRouterAdapter();
 
-    std::optional<RoutePlan> findRoute(const GeoPoint& start, const GeoPoint& end) const override;
+    std::optional<domain::routing::RoutePlan> findRoute(const domain::geo::GeoPoint& start, const domain::geo::GeoPoint& end) const override;
 };
+} // namespace routing
+} // namespace infrastructure
 
 #endif // MOCKROUTERADAPTER_H

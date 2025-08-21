@@ -1,5 +1,7 @@
 #include "Rider.h"
 
+namespace domain {
+
 Rider::Rider(int id, double rating, const std::string& preferences)
     : id(id), rating(rating), preferences(preferences) {}
 
@@ -14,3 +16,5 @@ double Rider::getRating() const {
 const std::string& Rider::getPreferences() const {
     return preferences;
 }
+
+} // namespace domain

@@ -814,6 +814,10 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/MockRouterAdapter.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/../../domain/routing/Router.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/../http/GoogleMapsClient.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/../http/../../domain/geo/GeoPoint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/../http/../../domain/routing/RoutePlan.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/FareCalculator.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h \
@@ -825,4 +829,15 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/../../domain/driver/Driver.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryTripRepository.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/../../domain/trip/Trip.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/http/GoogleMapsClient.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/messaging/EventBus.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeindex \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/payments/PaymentsGateway.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/interfaces/rest/RideController.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/interfaces/rest/../rest/RideRequestDTO.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/interfaces/rest/../rest/../../domain/geo/GeoPoint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/interfaces/rest/../../application/UseCases/RequestRideUseCase.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/interfaces/rest/RideRequestDTO.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h

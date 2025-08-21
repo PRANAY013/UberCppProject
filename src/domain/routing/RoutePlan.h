@@ -5,6 +5,8 @@
 #include <vector>
 #include <string>
 
+namespace domain {
+namespace routing {
 class RoutePlan {
 public:
     RoutePlan(const std::string& polyline, double distance, double duration);
@@ -18,5 +20,7 @@ private:
     double distance; // in meters
     double duration; // in seconds
 };
+} // namespace routing
+} // namespace domain
 
 #endif // ROUTEPLAN_H

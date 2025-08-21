@@ -1,5 +1,7 @@
 #include "RiderHistory.h"
 
+namespace domain {
+
 RiderHistory::RiderHistory() {}
 
 void RiderHistory::addTrip(const Trip& trip) {
@@ -9,3 +11,5 @@ void RiderHistory::addTrip(const Trip& trip) {
 const std::vector<Trip>& RiderHistory::getTrips() const {
     return trips;
 }
+
+} // namespace domain

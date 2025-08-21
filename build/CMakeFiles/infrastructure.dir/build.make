@@ -86,10 +86,24 @@ CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/MockRouterAdapter.cc -o CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.s
 
+CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o: CMakeFiles/infrastructure.dir/flags.make
+CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.cc
+CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o: CMakeFiles/infrastructure.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o -MF CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o.d -o CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.cc
+
+CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.cc > CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.i
+
+CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.cc -o CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.s
+
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o: CMakeFiles/infrastructure.dir/flags.make
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryRiderRepository.cc
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o: CMakeFiles/infrastructure.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o -MF CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o.d -o CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryRiderRepository.cc
 
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderReposi
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o: CMakeFiles/infrastructure.dir/flags.make
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryDriverRepository.cc
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o: CMakeFiles/infrastructure.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o -MF CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o.d -o CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryDriverRepository.cc
 
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepos
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o: CMakeFiles/infrastructure.dir/flags.make
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryTripRepository.cc
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o: CMakeFiles/infrastructure.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o -MF CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o.d -o CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryTripRepository.cc
 
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.i: cmake_force
@@ -128,23 +142,73 @@ CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripReposit
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryTripRepository.cc -o CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.s
 
+CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.o: CMakeFiles/infrastructure.dir/flags.make
+CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/http/GoogleMapsClient.cc
+CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.o: CMakeFiles/infrastructure.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.o -MF CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.o.d -o CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/http/GoogleMapsClient.cc
+
+CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/http/GoogleMapsClient.cc > CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.i
+
+CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/http/GoogleMapsClient.cc -o CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.s
+
+CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.o: CMakeFiles/infrastructure.dir/flags.make
+CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/messaging/EventBus.cc
+CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.o: CMakeFiles/infrastructure.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.o -MF CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.o.d -o CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/messaging/EventBus.cc
+
+CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/messaging/EventBus.cc > CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.i
+
+CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/messaging/EventBus.cc -o CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.s
+
+CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.o: CMakeFiles/infrastructure.dir/flags.make
+CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/payments/PaymentsGateway.cc
+CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.o: CMakeFiles/infrastructure.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.o -MF CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.o.d -o CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/payments/PaymentsGateway.cc
+
+CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/payments/PaymentsGateway.cc > CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.i
+
+CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/payments/PaymentsGateway.cc -o CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.s
+
 # Object files for target infrastructure
 infrastructure_OBJECTS = \
 "CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.o" \
+"CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o" \
 "CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o" \
 "CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o" \
-"CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o"
+"CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o" \
+"CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.o" \
+"CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.o" \
+"CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.o"
 
 # External object files for target infrastructure
 infrastructure_EXTERNAL_OBJECTS =
 
 libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.o
+libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o
 libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o
 libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o
 libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o
+libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.o
+libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.o
+libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.o
 libinfrastructure.a: CMakeFiles/infrastructure.dir/build.make
 libinfrastructure.a: CMakeFiles/infrastructure.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libinfrastructure.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libinfrastructure.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/infrastructure.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/infrastructure.dir/link.txt --verbose=$(VERBOSE)
 

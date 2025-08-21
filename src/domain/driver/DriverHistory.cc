@@ -1,5 +1,7 @@
 #include "DriverHistory.h"
 
+namespace domain {
+
 DriverHistory::DriverHistory() {}
 
 void DriverHistory::addTrip(const Trip& trip) {
@@ -9,3 +11,5 @@ void DriverHistory::addTrip(const Trip& trip) {
 const std::vector<Trip>& DriverHistory::getTrips() const {
     return trips;
 }
+
+} // namespace domain

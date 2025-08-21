@@ -4,7 +4,6 @@ project(UberCppProject)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Add a library for our domain objects
 # --- Domain Library ---
 # Contains the core business logic and entities.
 add_library(domain
@@ -58,6 +57,8 @@ target_link_libraries(application domain)
 add_library(infrastructure
     src/infrastructure/routing/MockRouterAdapter.h
     src/infrastructure/routing/MockRouterAdapter.cc
+    src/infrastructure/routing/GoogleRouterAdapter.h
+    src/infrastructure/routing/GoogleRouterAdapter.cc
     src/infrastructure/persistence/IRepository.h
     src/infrastructure/persistence/InMemoryRiderRepository.h
     src/infrastructure/persistence/InMemoryRiderRepository.cc
@@ -65,13 +66,30 @@ add_library(infrastructure
     src/infrastructure/persistence/InMemoryDriverRepository.cc
     src/infrastructure/persistence/InMemoryTripRepository.h
     src/infrastructure/persistence/InMemoryTripRepository.cc
+    src/infrastructure/http/GoogleMapsClient.h
+    src/infrastructure/http/GoogleMapsClient.cc
+    src/infrastructure/messaging/EventBus.h
+    src/infrastructure/messaging/EventBus.cc
+    src/infrastructure/payments/PaymentsGateway.h
+    src/infrastructure/payments/PaymentsGateway.cc
 )
 
 # The infrastructure layer depends on the domain layer.
 target_link_libraries(infrastructure domain)
 
+# --- Interfaces Library ---
+# Contains API controllers and DTOs.
+add_library(interfaces
+    src/interfaces/rest/RideRequestDTO.h
+    src/interfaces/rest/RideController.h
+    src/interfaces/rest/RideController.cc
+)
+
+# The interfaces layer depends on the application layer.
+target_link_libraries(interfaces application)
+
 
 # --- Main Executable ---
 # The entry point of the application.
 add_executable(uber_app src/main.cpp)
-target_link_libraries(uber_app application infrastructure) # Now links to application instead of domain
+target_link_libraries(uber_app application infrastructure interfaces)

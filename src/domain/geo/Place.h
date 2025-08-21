@@ -4,6 +4,8 @@
 #include "GeoPoint.h"
 #include <string>
 
+namespace domain {
+namespace geo {
 class Place {
 public:
     Place(const std::string& name, const GeoPoint& location);
@@ -15,5 +17,7 @@ private:
     std::string name;
     GeoPoint location;
 };
+} // namespace geo
+} // namespace domain
 
 #endif // PLACE_H

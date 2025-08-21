@@ -12,21 +12,25 @@
 #include <optional>
 #include <memory>
 
+namespace application {
+namespace UseCases {
+
 class RequestRideUseCase {
 public:
-    // The use case now depends on the abstract Router interface, the Matching service,
-    // and repositories for Rider and Trip.
-    RequestRideUseCase(const Router& router, const Matching& matching,
-                       IRepository<Rider, int>& riderRepository,
-                       IRepository<Trip, int>& tripRepository);
+    RequestRideUseCase(const domain::routing::Router& router, const domain::Matching& matching,
+                       infrastructure::persistence::IRepository<domain::Rider, int>& riderRepository,
+                       infrastructure::persistence::IRepository<domain::Trip, int>& tripRepository);
 
-    std::optional<Trip> execute(int riderId, const GeoPoint& start, const GeoPoint& end);
+    std::optional<domain::Trip> execute(int riderId, const domain::geo::GeoPoint& start, const domain::geo::GeoPoint& end);
 
 private:
-    const Router& router;
-    const Matching& matching;
-    IRepository<Rider, int>& riderRepository;
-    IRepository<Trip, int>& tripRepository;
+    const domain::routing::Router& router;
+    const domain::Matching& matching;
+    infrastructure::persistence::IRepository<domain::Rider, int>& riderRepository;
+    infrastructure::persistence::IRepository<domain::Trip, int>& tripRepository;
 };
+
+} // namespace UseCases
+} // namespace application
 
 #endif // REQUESTRIDEUSECASE_H

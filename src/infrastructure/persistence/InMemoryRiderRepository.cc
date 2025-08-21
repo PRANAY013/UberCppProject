@@ -1,12 +1,15 @@
 #include "InMemoryRiderRepository.h"
 
+namespace infrastructure {
+namespace persistence {
+
 InMemoryRiderRepository::InMemoryRiderRepository() {}
 
-void InMemoryRiderRepository::save(const Rider& rider) {
+void InMemoryRiderRepository::save(const domain::Rider& rider) {
     riders.insert_or_assign(rider.getId(), rider);
 }
 
-std::optional<Rider> InMemoryRiderRepository::findById(const int& id) const {
+std::optional<domain::Rider> InMemoryRiderRepository::findById(const int& id) const {
     auto it = riders.find(id);
     if (it != riders.end()) {
         return it->second;
@@ -14,8 +17,8 @@ std::optional<Rider> InMemoryRiderRepository::findById(const int& id) const {
     return std::nullopt;
 }
 
-std::vector<Rider> InMemoryRiderRepository::findAll() const {
-    std::vector<Rider> allRiders;
+std::vector<domain::Rider> InMemoryRiderRepository::findAll() const {
+    std::vector<domain::Rider> allRiders;
     for (const auto& pair : riders) {
         allRiders.push_back(pair.second);
     }
@@ -25,3 +28,6 @@ std::vector<Rider> InMemoryRiderRepository::findAll() const {
 void InMemoryRiderRepository::remove(const int& id) {
     riders.erase(id);
 }
+
+} // namespace persistence
+} // namespace infrastructure

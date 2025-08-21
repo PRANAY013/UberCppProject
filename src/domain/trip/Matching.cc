@@ -1,5 +1,7 @@
 #include "Matching.h"
 
+namespace domain {
+
 Matching::Matching() {}
 
 // Finds the best driver for a given trip from a list of available drivers.
@@ -20,3 +22,5 @@ std::optional<Driver> Matching::findBestDriver(const Trip& trip, const std::vect
     // For now, we simply return the first driver in the list.
     return availableDrivers.front();
 }
+
+} // namespace domain

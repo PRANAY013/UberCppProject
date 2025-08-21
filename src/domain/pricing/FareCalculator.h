@@ -3,6 +3,8 @@
 
 #include "SurgeModel.h"
 
+namespace domain {
+namespace pricing {
 class FareCalculator {
 public:
     FareCalculator(); // Constructor
@@ -11,5 +13,7 @@ public:
     // We will add more complex parameters like distance, duration, and surge pricing later.
     double calculateFare(const SurgeModel& surgeModel) const;
 };
+} // namespace pricing
+} // namespace domain
 
 #endif // FARECALCULATOR_H

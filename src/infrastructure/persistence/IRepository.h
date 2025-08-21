@@ -4,6 +4,9 @@
 #include <optional>
 #include <vector>
 
+namespace infrastructure {
+namespace persistence {
+
 // Generic interface for a repository.
 // T is the type of the entity (e.g., Rider, Driver, Trip).
 // ID is the type of the entity's ID.
@@ -17,5 +20,8 @@ public:
     virtual std::vector<T> findAll() const = 0;
     virtual void remove(const ID& id) = 0;
 };
+
+} // namespace persistence
+} // namespace infrastructure
 
 #endif // IREPOSITORY_H

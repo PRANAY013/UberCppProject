@@ -3,6 +3,7 @@
 
 #include <string>
 
+namespace domain {
 class Driver {
 public:
     enum class Status {
@@ -25,6 +26,6 @@ private:
     double rating;
     std::string vehicle;
 };
-
+} // namespace domain
 
 #endif // DRIVER_H

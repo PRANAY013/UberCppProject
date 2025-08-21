@@ -246,6 +246,9 @@ application_LIB_DEPENDS:STATIC=general;domain;
 //Dependencies for the target
 infrastructure_LIB_DEPENDS:STATIC=general;domain;
 
+//Dependencies for the target
+interfaces_LIB_DEPENDS:STATIC=general;application;
+
 
 ########################
 # INTERNAL cache entries

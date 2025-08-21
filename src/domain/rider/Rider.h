@@ -3,6 +3,7 @@
 
 #include <string>
 
+namespace domain {
 class Rider {
 public:
     Rider(int id, double rating, const std::string& preferences);
@@ -16,5 +17,6 @@ private:
     double rating;
     std::string preferences;
 };
+} // namespace domain
 
 #endif // RIDER_H

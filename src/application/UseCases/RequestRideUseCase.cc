@@ -6,15 +6,18 @@
 #include <vector>
 #include <iostream>
 
+namespace application {
+namespace UseCases {
+
 // Static counter for generating unique Trip IDs
 static int nextTripId = 1;
 
-RequestRideUseCase::RequestRideUseCase(const Router& router, const Matching& matching,
-                                       IRepository<Rider, int>& riderRepository,
-                                       IRepository<Trip, int>& tripRepository)
+RequestRideUseCase::RequestRideUseCase(const domain::routing::Router& router, const domain::Matching& matching,
+                                       infrastructure::persistence::IRepository<domain::Rider, int>& riderRepository,
+                                       infrastructure::persistence::IRepository<domain::Trip, int>& tripRepository)
     : router(router), matching(matching), riderRepository(riderRepository), tripRepository(tripRepository) {}
 
-std::optional<Trip> RequestRideUseCase::execute(int riderId, const GeoPoint& start, const GeoPoint& end) {
+std::optional<domain::Trip> RequestRideUseCase::execute(int riderId, const domain::geo::GeoPoint& start, const domain::geo::GeoPoint& end) {
     // --- Placeholder Implementation ---
     // 1. Fetch Rider from repository
     auto rider = riderRepository.findById(riderId);
@@ -26,7 +29,7 @@ std::optional<Trip> RequestRideUseCase::execute(int riderId, const GeoPoint& sta
 
 
     // 2. Create a new Trip object
-    Trip newTrip(nextTripId++, Trip::State::Requested); // Assign unique ID
+    domain::Trip newTrip(nextTripId++, domain::Trip::State::Requested); // Assign unique ID
     // In the future, the trip would be initialized with more data,
     // like riderId, start, and end points.
 
@@ -46,16 +49,16 @@ std::optional<Trip> RequestRideUseCase::execute(int riderId, const GeoPoint& sta
 
     // 5. Use the injected matching service to find a driver
     // For demonstration, create some dummy drivers
-    Driver driver1(101, Driver::Status::Idle, 4.8, "Toyota Camry");
-    Driver driver2(102, Driver::Status::Idle, 4.9, "Honda Accord");
-    std::vector<Driver> availableDrivers = {driver1, driver2};
+    domain::Driver driver1(101, domain::Driver::Status::Idle, 4.8, "Toyota Camry"); // Assign ID to dummy driver
+    domain::Driver driver2(102, domain::Driver::Status::Idle, 4.9, "Honda Accord"); // Assign ID to dummy driver
+    std::vector<domain::Driver> availableDrivers = {driver1, driver2};
 
     auto bestDriver = matching.findBestDriver(newTrip, availableDrivers);
 
     if (bestDriver) {
         std::cout << "  [RequestRideUseCase] Best driver found: " << bestDriver->getVehicle() << std::endl;
         // In a real scenario, we would assign this driver to the trip
-        newTrip.setState(Trip::State::Assigned); // Update trip state to assigned
+        newTrip.setState(domain::Trip::State::Assigned); // Update trip state to assigned
         // We also need to save the updated trip back to the repository
         tripRepository.save(newTrip);
     } else {
@@ -64,3 +67,6 @@ std::optional<Trip> RequestRideUseCase::execute(int riderId, const GeoPoint& sta
 
     return newTrip;
 }
+
+} // namespace UseCases
+} // namespace application

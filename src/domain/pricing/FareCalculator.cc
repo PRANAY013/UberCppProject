@@ -1,5 +1,8 @@
 #include "FareCalculator.h"
 
+namespace domain {
+namespace pricing {
+
 FareCalculator::FareCalculator() {}
 
 // A simple fare calculation for now.
@@ -9,3 +12,6 @@ double FareCalculator::calculateFare(const SurgeModel& surgeModel) const {
     double baseFare = 15.50;
     return baseFare * surgeModel.getMultiplier();
 }
+
+} // namespace pricing
+} // namespace domain

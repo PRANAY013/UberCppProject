@@ -1,5 +1,8 @@
 #include "RoutePlan.h"
 
+namespace domain {
+namespace routing {
+
 RoutePlan::RoutePlan(const std::string& polyline, double distance, double duration)
     : polyline(polyline), distance(distance), duration(duration) {}
 
@@ -14,3 +17,6 @@ double RoutePlan::getDistance() const {
 double RoutePlan::getDuration() const {
     return duration;
 }
+
+} // namespace routing
+} // namespace domain

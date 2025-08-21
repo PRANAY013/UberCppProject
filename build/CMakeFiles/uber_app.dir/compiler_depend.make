@@ -429,6 +429,7 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support/pthread.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/find_index.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/ignore.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/make_tuple_types.h \
@@ -615,6 +616,7 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/limits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex \
@@ -637,6 +639,7 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/tuple \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeindex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility \
@@ -819,14 +822,38 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/http/GoogleMapsClient.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/messaging/EventBus.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/payments/PaymentsGateway.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/IRepository.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryDriverRepository.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryRiderRepository.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryTripRepository.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/Router.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/MockRouterAdapter.h
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/RoutePlan.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/http/GoogleMapsClient.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/MockRouterAdapter.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/RequestRideUseCase.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/interfaces/rest/RideRequestDTO.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/interfaces/rest/RideController.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/interfaces/rest/RideRequestDTO.h
 
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/interfaces/rest/RideController.h:
 
 /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryRiderRepository.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/payments/PaymentsGateway.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/messaging/EventBus.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/http/GoogleMapsClient.h:
 
 /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/RequestRideUseCase.h:
 
@@ -1008,17 +1035,13 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h:
 
+/Users/pranay/Pranay/PROG/UberCppProject/src/interfaces/rest/RideRequestDTO.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread/pthread_impl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_if.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/exponential_functions.h:
 
@@ -1037,6 +1060,14 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_if.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wctype.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeindex:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h:
 
@@ -1095,6 +1126,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/machine/_structs.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cwchar:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdio:
 
@@ -1446,6 +1479,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/find_index.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_useconds_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:
@@ -1722,6 +1757,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/default_sentinel.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/data.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:
@@ -1935,6 +1972,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/relation.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/in_place.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryDriverRepository.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:
 
@@ -2263,6 +2302,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_specialization.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryTripRepository.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ctime:
 

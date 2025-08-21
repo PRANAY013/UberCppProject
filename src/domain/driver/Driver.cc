@@ -1,5 +1,7 @@
 #include "Driver.h"
 
+namespace domain {
+
 Driver::Driver(int id, Status status, double rating, const std::string& vehicle)
     : id(id), status(status), rating(rating), vehicle(vehicle) {}
 
@@ -18,3 +20,5 @@ double Driver::getRating() const {
 const std::string& Driver::getVehicle() const {
     return vehicle;
 }
+
+} // namespace domain

@@ -4,6 +4,7 @@
 #include "../trip/Trip.h"
 #include <vector>
 
+namespace domain {
 class RiderHistory {
 public:
     RiderHistory();
@@ -14,5 +15,6 @@ public:
 private:
     std::vector<Trip> trips;
 };
+} // namespace domain
 
 #endif // RIDERHISTORY_H

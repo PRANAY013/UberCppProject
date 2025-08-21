@@ -156,6 +156,19 @@ infrastructure/fast:
 .PHONY : infrastructure/fast
 
 #=============================================================================
+# Target rules for targets named interfaces
+
+# Build rule for target.
+interfaces: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 interfaces
+.PHONY : interfaces
+
+# fast build rule for target.
+interfaces/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interfaces.dir/build.make CMakeFiles/interfaces.dir/build
+.PHONY : interfaces/fast
+
+#=============================================================================
 # Target rules for targets named uber_app
 
 # Build rule for target.
@@ -576,6 +589,78 @@ src/domain/trip/Trip.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/src/domain/trip/Trip.cc.s
 .PHONY : src/domain/trip/Trip.cc.s
 
+src/infrastructure/http/GoogleMapsClient.o: src/infrastructure/http/GoogleMapsClient.cc.o
+.PHONY : src/infrastructure/http/GoogleMapsClient.o
+
+# target to build an object file
+src/infrastructure/http/GoogleMapsClient.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.o
+.PHONY : src/infrastructure/http/GoogleMapsClient.cc.o
+
+src/infrastructure/http/GoogleMapsClient.i: src/infrastructure/http/GoogleMapsClient.cc.i
+.PHONY : src/infrastructure/http/GoogleMapsClient.i
+
+# target to preprocess a source file
+src/infrastructure/http/GoogleMapsClient.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.i
+.PHONY : src/infrastructure/http/GoogleMapsClient.cc.i
+
+src/infrastructure/http/GoogleMapsClient.s: src/infrastructure/http/GoogleMapsClient.cc.s
+.PHONY : src/infrastructure/http/GoogleMapsClient.s
+
+# target to generate assembly for a file
+src/infrastructure/http/GoogleMapsClient.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/http/GoogleMapsClient.cc.s
+.PHONY : src/infrastructure/http/GoogleMapsClient.cc.s
+
+src/infrastructure/messaging/EventBus.o: src/infrastructure/messaging/EventBus.cc.o
+.PHONY : src/infrastructure/messaging/EventBus.o
+
+# target to build an object file
+src/infrastructure/messaging/EventBus.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.o
+.PHONY : src/infrastructure/messaging/EventBus.cc.o
+
+src/infrastructure/messaging/EventBus.i: src/infrastructure/messaging/EventBus.cc.i
+.PHONY : src/infrastructure/messaging/EventBus.i
+
+# target to preprocess a source file
+src/infrastructure/messaging/EventBus.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.i
+.PHONY : src/infrastructure/messaging/EventBus.cc.i
+
+src/infrastructure/messaging/EventBus.s: src/infrastructure/messaging/EventBus.cc.s
+.PHONY : src/infrastructure/messaging/EventBus.s
+
+# target to generate assembly for a file
+src/infrastructure/messaging/EventBus.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/messaging/EventBus.cc.s
+.PHONY : src/infrastructure/messaging/EventBus.cc.s
+
+src/infrastructure/payments/PaymentsGateway.o: src/infrastructure/payments/PaymentsGateway.cc.o
+.PHONY : src/infrastructure/payments/PaymentsGateway.o
+
+# target to build an object file
+src/infrastructure/payments/PaymentsGateway.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.o
+.PHONY : src/infrastructure/payments/PaymentsGateway.cc.o
+
+src/infrastructure/payments/PaymentsGateway.i: src/infrastructure/payments/PaymentsGateway.cc.i
+.PHONY : src/infrastructure/payments/PaymentsGateway.i
+
+# target to preprocess a source file
+src/infrastructure/payments/PaymentsGateway.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.i
+.PHONY : src/infrastructure/payments/PaymentsGateway.cc.i
+
+src/infrastructure/payments/PaymentsGateway.s: src/infrastructure/payments/PaymentsGateway.cc.s
+.PHONY : src/infrastructure/payments/PaymentsGateway.s
+
+# target to generate assembly for a file
+src/infrastructure/payments/PaymentsGateway.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.s
+.PHONY : src/infrastructure/payments/PaymentsGateway.cc.s
+
 src/infrastructure/persistence/InMemoryDriverRepository.o: src/infrastructure/persistence/InMemoryDriverRepository.cc.o
 .PHONY : src/infrastructure/persistence/InMemoryDriverRepository.o
 
@@ -648,6 +733,30 @@ src/infrastructure/persistence/InMemoryTripRepository.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.s
 .PHONY : src/infrastructure/persistence/InMemoryTripRepository.cc.s
 
+src/infrastructure/routing/GoogleRouterAdapter.o: src/infrastructure/routing/GoogleRouterAdapter.cc.o
+.PHONY : src/infrastructure/routing/GoogleRouterAdapter.o
+
+# target to build an object file
+src/infrastructure/routing/GoogleRouterAdapter.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o
+.PHONY : src/infrastructure/routing/GoogleRouterAdapter.cc.o
+
+src/infrastructure/routing/GoogleRouterAdapter.i: src/infrastructure/routing/GoogleRouterAdapter.cc.i
+.PHONY : src/infrastructure/routing/GoogleRouterAdapter.i
+
+# target to preprocess a source file
+src/infrastructure/routing/GoogleRouterAdapter.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.i
+.PHONY : src/infrastructure/routing/GoogleRouterAdapter.cc.i
+
+src/infrastructure/routing/GoogleRouterAdapter.s: src/infrastructure/routing/GoogleRouterAdapter.cc.s
+.PHONY : src/infrastructure/routing/GoogleRouterAdapter.s
+
+# target to generate assembly for a file
+src/infrastructure/routing/GoogleRouterAdapter.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.s
+.PHONY : src/infrastructure/routing/GoogleRouterAdapter.cc.s
+
 src/infrastructure/routing/MockRouterAdapter.o: src/infrastructure/routing/MockRouterAdapter.cc.o
 .PHONY : src/infrastructure/routing/MockRouterAdapter.o
 
@@ -671,6 +780,30 @@ src/infrastructure/routing/MockRouterAdapter.s: src/infrastructure/routing/MockR
 src/infrastructure/routing/MockRouterAdapter.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.s
 .PHONY : src/infrastructure/routing/MockRouterAdapter.cc.s
+
+src/interfaces/rest/RideController.o: src/interfaces/rest/RideController.cc.o
+.PHONY : src/interfaces/rest/RideController.o
+
+# target to build an object file
+src/interfaces/rest/RideController.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interfaces.dir/build.make CMakeFiles/interfaces.dir/src/interfaces/rest/RideController.cc.o
+.PHONY : src/interfaces/rest/RideController.cc.o
+
+src/interfaces/rest/RideController.i: src/interfaces/rest/RideController.cc.i
+.PHONY : src/interfaces/rest/RideController.i
+
+# target to preprocess a source file
+src/interfaces/rest/RideController.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interfaces.dir/build.make CMakeFiles/interfaces.dir/src/interfaces/rest/RideController.cc.i
+.PHONY : src/interfaces/rest/RideController.cc.i
+
+src/interfaces/rest/RideController.s: src/interfaces/rest/RideController.cc.s
+.PHONY : src/interfaces/rest/RideController.s
+
+# target to generate assembly for a file
+src/interfaces/rest/RideController.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interfaces.dir/build.make CMakeFiles/interfaces.dir/src/interfaces/rest/RideController.cc.s
+.PHONY : src/interfaces/rest/RideController.cc.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -707,6 +840,7 @@ help:
 	@echo "... application"
 	@echo "... domain"
 	@echo "... infrastructure"
+	@echo "... interfaces"
 	@echo "... uber_app"
 	@echo "... src/application/UseCases/AssignDriverUseCase.o"
 	@echo "... src/application/UseCases/AssignDriverUseCase.i"
@@ -759,6 +893,15 @@ help:
 	@echo "... src/domain/trip/Trip.o"
 	@echo "... src/domain/trip/Trip.i"
 	@echo "... src/domain/trip/Trip.s"
+	@echo "... src/infrastructure/http/GoogleMapsClient.o"
+	@echo "... src/infrastructure/http/GoogleMapsClient.i"
+	@echo "... src/infrastructure/http/GoogleMapsClient.s"
+	@echo "... src/infrastructure/messaging/EventBus.o"
+	@echo "... src/infrastructure/messaging/EventBus.i"
+	@echo "... src/infrastructure/messaging/EventBus.s"
+	@echo "... src/infrastructure/payments/PaymentsGateway.o"
+	@echo "... src/infrastructure/payments/PaymentsGateway.i"
+	@echo "... src/infrastructure/payments/PaymentsGateway.s"
 	@echo "... src/infrastructure/persistence/InMemoryDriverRepository.o"
 	@echo "... src/infrastructure/persistence/InMemoryDriverRepository.i"
 	@echo "... src/infrastructure/persistence/InMemoryDriverRepository.s"
@@ -768,9 +911,15 @@ help:
 	@echo "... src/infrastructure/persistence/InMemoryTripRepository.o"
 	@echo "... src/infrastructure/persistence/InMemoryTripRepository.i"
 	@echo "... src/infrastructure/persistence/InMemoryTripRepository.s"
+	@echo "... src/infrastructure/routing/GoogleRouterAdapter.o"
+	@echo "... src/infrastructure/routing/GoogleRouterAdapter.i"
+	@echo "... src/infrastructure/routing/GoogleRouterAdapter.s"
 	@echo "... src/infrastructure/routing/MockRouterAdapter.o"
 	@echo "... src/infrastructure/routing/MockRouterAdapter.i"
 	@echo "... src/infrastructure/routing/MockRouterAdapter.s"
+	@echo "... src/interfaces/rest/RideController.o"
+	@echo "... src/interfaces/rest/RideController.i"
+	@echo "... src/interfaces/rest/RideController.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

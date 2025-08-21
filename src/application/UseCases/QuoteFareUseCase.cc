@@ -1,6 +1,9 @@
 #include "QuoteFareUseCase.h"
 
-QuoteFareUseCase::QuoteFareUseCase(const FareCalculator& fareCalculator, const SurgeModel& surgeModel)
+namespace application {
+namespace UseCases {
+
+QuoteFareUseCase::QuoteFareUseCase(const domain::pricing::FareCalculator& fareCalculator, const domain::pricing::SurgeModel& surgeModel)
     : fareCalculator(fareCalculator), surgeModel(surgeModel) {}
 
 double QuoteFareUseCase::execute() const {
@@ -8,3 +11,6 @@ double QuoteFareUseCase::execute() const {
     // In the future, this method would take parameters like distance, duration, etc.
     return fareCalculator.calculateFare(surgeModel);
 }
+
+} // namespace UseCases
+} // namespace application

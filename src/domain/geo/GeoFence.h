@@ -4,6 +4,8 @@
 #include "GeoPoint.h"
 #include <vector>
 
+namespace domain {
+namespace geo {
 class GeoFence {
 public:
     GeoFence(const std::vector<GeoPoint>& vertices);
@@ -13,5 +15,7 @@ public:
 private:
     std::vector<GeoPoint> vertices;
 };
+} // namespace geo
+} // namespace domain
 
 #endif // GEOFENCE_H

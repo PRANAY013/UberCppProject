@@ -3,6 +3,7 @@
 
 #include "../geo/GeoPoint.h"
 
+namespace domain {
 class Trip {
 public:
     enum class State {
@@ -21,13 +22,14 @@ public:
     State getState() const;
     void setState(State newState);
 
-    const GeoPoint& getCurrentLocation() const;
-    void setCurrentLocation(const GeoPoint& newLocation);
+    const geo::GeoPoint& getCurrentLocation() const;
+    void setCurrentLocation(const geo::GeoPoint& newLocation);
 
 private:
     int id;
     State state;
-    GeoPoint currentLocation;
+    geo::GeoPoint currentLocation;
 };
+} // namespace domain
 
 #endif // TRIP_H
