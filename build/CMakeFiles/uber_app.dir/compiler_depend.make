@@ -808,6 +808,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/Router.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/driver/Driver.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/RoutePlan.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Trip.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/IRepository.h \
@@ -822,6 +824,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/pricing/SurgeModel.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/rider/Rider.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/trip/Matching.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/RoutePlan.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/http/GoogleMapsClient.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/messaging/EventBus.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/payments/PaymentsGateway.h \
@@ -832,11 +836,9 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryDriverRepository.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryRiderRepository.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryTripRepository.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/Router.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/RoutePlan.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/http/GoogleMapsClient.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/domain/routing/Router.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/LocalRouterAdapter.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/MockRouterAdapter.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/RequestRideUseCase.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/domain/geo/GeoPoint.h \
@@ -846,6 +848,8 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 
 
 /Users/pranay/Pranay/PROG/UberCppProject/src/interfaces/rest/RideController.h:
+
+/Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/LocalRouterAdapter.h:
 
 /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryRiderRepository.h:
 
@@ -1126,8 +1130,6 @@ CMakeFiles/uber_app.dir/src/main.cpp.o: /Users/pranay/Pranay/PROG/UberCppProject
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/machine/_structs.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cwchar:
-
-/Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdio:
 

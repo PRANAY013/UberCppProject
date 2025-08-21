@@ -733,29 +733,29 @@ src/infrastructure/persistence/InMemoryTripRepository.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.s
 .PHONY : src/infrastructure/persistence/InMemoryTripRepository.cc.s
 
-src/infrastructure/routing/GoogleRouterAdapter.o: src/infrastructure/routing/GoogleRouterAdapter.cc.o
-.PHONY : src/infrastructure/routing/GoogleRouterAdapter.o
+src/infrastructure/routing/LocalRouterAdapter.o: src/infrastructure/routing/LocalRouterAdapter.cc.o
+.PHONY : src/infrastructure/routing/LocalRouterAdapter.o
 
 # target to build an object file
-src/infrastructure/routing/GoogleRouterAdapter.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o
-.PHONY : src/infrastructure/routing/GoogleRouterAdapter.cc.o
+src/infrastructure/routing/LocalRouterAdapter.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.o
+.PHONY : src/infrastructure/routing/LocalRouterAdapter.cc.o
 
-src/infrastructure/routing/GoogleRouterAdapter.i: src/infrastructure/routing/GoogleRouterAdapter.cc.i
-.PHONY : src/infrastructure/routing/GoogleRouterAdapter.i
+src/infrastructure/routing/LocalRouterAdapter.i: src/infrastructure/routing/LocalRouterAdapter.cc.i
+.PHONY : src/infrastructure/routing/LocalRouterAdapter.i
 
 # target to preprocess a source file
-src/infrastructure/routing/GoogleRouterAdapter.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.i
-.PHONY : src/infrastructure/routing/GoogleRouterAdapter.cc.i
+src/infrastructure/routing/LocalRouterAdapter.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.i
+.PHONY : src/infrastructure/routing/LocalRouterAdapter.cc.i
 
-src/infrastructure/routing/GoogleRouterAdapter.s: src/infrastructure/routing/GoogleRouterAdapter.cc.s
-.PHONY : src/infrastructure/routing/GoogleRouterAdapter.s
+src/infrastructure/routing/LocalRouterAdapter.s: src/infrastructure/routing/LocalRouterAdapter.cc.s
+.PHONY : src/infrastructure/routing/LocalRouterAdapter.s
 
 # target to generate assembly for a file
-src/infrastructure/routing/GoogleRouterAdapter.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.s
-.PHONY : src/infrastructure/routing/GoogleRouterAdapter.cc.s
+src/infrastructure/routing/LocalRouterAdapter.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infrastructure.dir/build.make CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.s
+.PHONY : src/infrastructure/routing/LocalRouterAdapter.cc.s
 
 src/infrastructure/routing/MockRouterAdapter.o: src/infrastructure/routing/MockRouterAdapter.cc.o
 .PHONY : src/infrastructure/routing/MockRouterAdapter.o
@@ -911,9 +911,9 @@ help:
 	@echo "... src/infrastructure/persistence/InMemoryTripRepository.o"
 	@echo "... src/infrastructure/persistence/InMemoryTripRepository.i"
 	@echo "... src/infrastructure/persistence/InMemoryTripRepository.s"
-	@echo "... src/infrastructure/routing/GoogleRouterAdapter.o"
-	@echo "... src/infrastructure/routing/GoogleRouterAdapter.i"
-	@echo "... src/infrastructure/routing/GoogleRouterAdapter.s"
+	@echo "... src/infrastructure/routing/LocalRouterAdapter.o"
+	@echo "... src/infrastructure/routing/LocalRouterAdapter.i"
+	@echo "... src/infrastructure/routing/LocalRouterAdapter.s"
 	@echo "... src/infrastructure/routing/MockRouterAdapter.o"
 	@echo "... src/infrastructure/routing/MockRouterAdapter.i"
 	@echo "... src/infrastructure/routing/MockRouterAdapter.s"

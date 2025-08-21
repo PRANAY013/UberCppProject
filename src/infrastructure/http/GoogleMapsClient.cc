@@ -10,7 +10,7 @@ std::optional<domain::routing::RoutePlan> GoogleMapsClient::getDirections(const 
     std::cout << "  [GoogleMapsClient] Getting directions from (" << origin.getLatitude() << ", " << origin.getLongitude() << ") to ("
               << destination.getLatitude() << ", " << destination.getLongitude() << ")..." << std::endl;
     // Mock implementation: return a fixed route plan
-    return domain::routing::RoutePlan("mock_polyline_directions", 10000.0, 1200.0); // 10km, 20min
+    return std::make_optional(domain::routing::RoutePlan("mock_polyline_directions", 10000.0, 1200.0)); // 10km, 20min
 }
 
 std::pair<double, double> GoogleMapsClient::getDistanceMatrix(const domain::geo::GeoPoint& origin, const domain::geo::GeoPoint& destination) const {

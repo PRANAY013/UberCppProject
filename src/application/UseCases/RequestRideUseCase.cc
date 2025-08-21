@@ -65,7 +65,7 @@ std::optional<domain::Trip> RequestRideUseCase::execute(int riderId, const domai
         std::cout << "  [RequestRideUseCase] No suitable driver found." << std::endl;
     }
 
-    return newTrip;
+    return std::make_optional(newTrip);
 }
 
 } // namespace UseCases

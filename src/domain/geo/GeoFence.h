@@ -6,15 +6,17 @@
 
 namespace domain {
 namespace geo {
+
 class GeoFence {
 public:
-    GeoFence(const std::vector<GeoPoint>& vertices);
+    GeoFence(const std::vector<domain::geo::GeoPoint>& vertices);
 
-    bool contains(const GeoPoint& point) const;
+    bool contains(const domain::geo::GeoPoint& point) const;
 
 private:
-    std::vector<GeoPoint> vertices;
+    std::vector<domain::geo::GeoPoint> vertices;
 };
+
 } // namespace geo
 } // namespace domain
 

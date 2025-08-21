@@ -86,19 +86,19 @@ CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/MockRouterAdapter.cc -o CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.s
 
-CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o: CMakeFiles/infrastructure.dir/flags.make
-CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.cc
-CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o: CMakeFiles/infrastructure.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o -MF CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o.d -o CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.cc
+CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.o: CMakeFiles/infrastructure.dir/flags.make
+CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/LocalRouterAdapter.cc
+CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.o: CMakeFiles/infrastructure.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.o -MF CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.o.d -o CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.o -c /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/LocalRouterAdapter.cc
 
-CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.cc > CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.i
+CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/LocalRouterAdapter.cc > CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.i
 
-CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/GoogleRouterAdapter.cc -o CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.s
+CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/routing/LocalRouterAdapter.cc -o CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.s
 
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o: CMakeFiles/infrastructure.dir/flags.make
 CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o: /Users/pranay/Pranay/PROG/UberCppProject/src/infrastructure/persistence/InMemoryRiderRepository.cc
@@ -187,7 +187,7 @@ CMakeFiles/infrastructure.dir/src/infrastructure/payments/PaymentsGateway.cc.s: 
 # Object files for target infrastructure
 infrastructure_OBJECTS = \
 "CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.o" \
-"CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o" \
+"CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.o" \
 "CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o" \
 "CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o" \
 "CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o" \
@@ -199,7 +199,7 @@ infrastructure_OBJECTS = \
 infrastructure_EXTERNAL_OBJECTS =
 
 libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/routing/MockRouterAdapter.cc.o
-libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/routing/GoogleRouterAdapter.cc.o
+libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/routing/LocalRouterAdapter.cc.o
 libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryRiderRepository.cc.o
 libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryDriverRepository.cc.o
 libinfrastructure.a: CMakeFiles/infrastructure.dir/src/infrastructure/persistence/InMemoryTripRepository.cc.o

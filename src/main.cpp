@@ -5,8 +5,9 @@
 #include "application/UseCases/UpdateLocationUseCase.h"
 #include "application/UseCases/ShareRideStatusUseCase.h"
 #include "domain/geo/GeoPoint.h"
+#include "domain/geo/GeoFence.h"
 #include "infrastructure/routing/MockRouterAdapter.h"
-#include "infrastructure/routing/GoogleRouterAdapter.h"
+#include "infrastructure/routing/LocalRouterAdapter.h"
 #include "domain/trip/Matching.h"
 #include "domain/pricing/FareCalculator.h"
 #include "domain/pricing/SurgeModel.h"
@@ -37,7 +38,7 @@ int main() {
     // 1. Initialize infrastructure components
     infrastructure::routing::MockRouterAdapter mockRouter;
     infrastructure::http::GoogleMapsClient googleMapsClient;
-    infrastructure::routing::GoogleRouterAdapter googleRouter(googleMapsClient);
+    infrastructure::routing::LocalRouterAdapter localRouter;
     infrastructure::persistence::InMemoryRiderRepository riderRepository;
     infrastructure::persistence::InMemoryDriverRepository driverRepository;
     infrastructure::persistence::InMemoryTripRepository tripRepository;
@@ -66,7 +67,7 @@ int main() {
     domain::pricing::SurgeModel surgeModel;
 
     // 3. Initialize the application's use cases, injecting dependencies
-    application::UseCases::RequestRideUseCase requestRideUseCase(googleRouter, matchingService, riderRepository, tripRepository);
+    application::UseCases::RequestRideUseCase requestRideUseCase(localRouter, matchingService, riderRepository, tripRepository);
     application::UseCases::QuoteFareUseCase quoteFareUseCase(fareCalculator, surgeModel);
     application::UseCases::AssignDriverUseCase assignDriverUseCase;
     application::UseCases::UpdateLocationUseCase updateLocationUseCase;
@@ -84,6 +85,7 @@ int main() {
 
     std::string controllerResponse = rideController.requestRide(rideRequest);
     std::cout << "  Controller Response: " << controllerResponse << std::endl;
+
 
     // The rest of the main.cpp content is for demonstrating individual components
     // and would typically be replaced by actual application flow driven by controllers.
@@ -105,7 +107,7 @@ int main() {
 
 
     // 7. Demonstrate GoogleMapsClient (demonstration)
-    std::cout << "\nDemonstrating GoogleMapsClient (demonstration)..." << std::endl;
+    std::cout << "\nDemonstrating GoogleMapsClient..." << std::endl;
     domain::geo::GeoPoint start(40.7580, -73.9855);
     domain::geo::GeoPoint end(40.7831, -73.9712);
     auto directions = googleMapsClient.getDirections(start, end);
@@ -114,14 +116,33 @@ int main() {
     }
     auto distanceMatrix = googleMapsClient.getDistanceMatrix(start, end);
     std::cout << "  Distance Matrix: Distance=" << distanceMatrix.first << "m, Duration=" << distanceMatrix.second << "s" << std::endl;
-    std::cout << "  Place Details: " << googleMapsClient.getPlaceDetails("ChIJd8PN8_xYwokR_g_g_g_g_g") << std::endl;
+    auto placeDetails = googleMapsClient.getPlaceDetails("ChIJd8PN8_xYwokR_g_g_g_g_g");
+    std::cout << "  Place Details: " << placeDetails << std::endl;
 
-    // 8. Demonstrate PaymentsGateway (demonstration)
+
+    // 8. Demonstrate PaymentsGateway
     std::cout << "\nDemonstrating PaymentsGateway..." << std::endl;
     bool paymentSuccess = paymentsGateway.processPayment("user123", 18.6, "Credit Card");
     std::cout << "  Payment processed: " << (paymentSuccess ? "Success" : "Failure") << std::endl;
     bool refundSuccess = paymentsGateway.refund("txn_abc123", 5.0);
     std::cout << "  Refund processed: " << (refundSuccess ? "Success" : "Failure") << std::endl;
+
+    // Test GeoFence with points inside and outside
+    std::cout << "\nTesting GeoFence..." << std::endl;
+    std::vector<domain::geo::GeoPoint> testFenceVertices;
+    testFenceVertices.push_back(domain::geo::GeoPoint(40.7, -74.1));
+    testFenceVertices.push_back(domain::geo::GeoPoint(40.8, -74.1));
+    testFenceVertices.push_back(domain::geo::GeoPoint(40.8, -74.0));
+    testFenceVertices.push_back(domain::geo::GeoPoint(40.7, -74.0));
+    domain::geo::GeoFence testZone(testFenceVertices);
+
+    domain::geo::GeoPoint pointInside(40.75, -74.05); // Should be inside
+    domain::geo::GeoPoint pointOutside(40.9, -74.05); // Should be outside
+
+    std::cout << "  Point (" << pointInside.getLatitude() << ", " << pointInside.getLongitude() << ") is in test zone? "
+              << (testZone.contains(pointInside) ? "Yes" : "No") << std::endl;
+    std::cout << "  Point (" << pointOutside.getLatitude() << ", " << pointOutside.getLongitude() << ") is in test zone? "
+              << (testZone.contains(pointOutside) ? "Yes" : "No") << std::endl;
 
 
     return 0;

@@ -57,8 +57,8 @@ target_link_libraries(application domain)
 add_library(infrastructure
     src/infrastructure/routing/MockRouterAdapter.h
     src/infrastructure/routing/MockRouterAdapter.cc
-    src/infrastructure/routing/GoogleRouterAdapter.h
-    src/infrastructure/routing/GoogleRouterAdapter.cc
+    src/infrastructure/routing/LocalRouterAdapter.h
+    src/infrastructure/routing/LocalRouterAdapter.cc
     src/infrastructure/persistence/IRepository.h
     src/infrastructure/persistence/InMemoryRiderRepository.h
     src/infrastructure/persistence/InMemoryRiderRepository.cc
