@@ -4,9 +4,8 @@ CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.o: \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/geo/GeoPoint.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/Trip.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/../geo/GeoPoint.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/Router.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/../geo/GeoPoint.h \
-  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/RoutePlan.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/../routing/RoutePlan.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/../routing/../geo/GeoPoint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h \
@@ -760,6 +759,9 @@ CMakeFiles/application.dir/src/application/UseCases/RequestRideUseCase.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/Router.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/../geo/GeoPoint.h \
+  /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/routing/RoutePlan.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/Matching.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../domain/trip/../driver/Driver.h \
   /Users/pranay/Pranay/PROG/UberCppProject/src/application/UseCases/../../infrastructure/persistence/IRepository.h \

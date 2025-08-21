@@ -42,7 +42,7 @@ std::optional<domain::Trip> RequestRideUseCase::execute(int riderId, const domai
     auto routePlan = router.findRoute(start, end);
     if (routePlan) {
         std::cout << "  [RequestRideUseCase] Route found! Distance: " << routePlan->getDistance() << "m, Duration: " << routePlan->getDuration() << "s" << std::endl;
-        // In a real scenario, we would associate this route with the trip
+        newTrip.setRoutePlan(*routePlan); // Set the route plan on the trip
     } else {
         std::cout << "  [RequestRideUseCase] No route found." << std::endl;
     }

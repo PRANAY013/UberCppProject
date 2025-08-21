@@ -1,10 +1,11 @@
 #include "Trip.h"
 #include "../geo/GeoPoint.h"
+#include "../routing/RoutePlan.h"
 
 namespace domain {
 
 Trip::Trip(int id, State state)
-    : id(id), state(state), currentLocation(geo::GeoPoint(0.0, 0.0)) {}
+    : id(id), state(state), currentLocation(geo::GeoPoint(0.0, 0.0)), routePlan_(std::nullopt) {}
 
 int Trip::getId() const {
     return id;
@@ -24,6 +25,14 @@ const geo::GeoPoint& Trip::getCurrentLocation() const {
 
 void Trip::setCurrentLocation(const geo::GeoPoint& newLocation) {
     currentLocation = newLocation;
+}
+
+const std::optional<routing::RoutePlan>& Trip::getRoutePlan() const {
+    return routePlan_;
+}
+
+void Trip::setRoutePlan(const routing::RoutePlan& routePlan) {
+    routePlan_ = routePlan;
 }
 
 } // namespace domain

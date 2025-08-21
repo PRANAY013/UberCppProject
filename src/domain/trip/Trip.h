@@ -2,6 +2,8 @@
 #define TRIP_H
 
 #include "../geo/GeoPoint.h"
+#include "../routing/RoutePlan.h"
+#include <optional>
 
 namespace domain {
 class Trip {
@@ -25,10 +27,14 @@ public:
     const geo::GeoPoint& getCurrentLocation() const;
     void setCurrentLocation(const geo::GeoPoint& newLocation);
 
+    const std::optional<routing::RoutePlan>& getRoutePlan() const;
+    void setRoutePlan(const routing::RoutePlan& routePlan);
+
 private:
     int id;
     State state;
     geo::GeoPoint currentLocation;
+    std::optional<routing::RoutePlan> routePlan_;
 };
 } // namespace domain
 
