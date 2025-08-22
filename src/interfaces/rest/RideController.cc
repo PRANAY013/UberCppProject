@@ -1,29 +1,50 @@
 #include "RideController.h"
-#include <iostream>
+#include "RideRequestDTO.h"
+#include "../../domain/geo/GeoPoint.h"
+#include "../../plugins/UseCasePlugin.h"
+#include <json/json.h>
 
-namespace interfaces {
-namespace rest {
+void interfaces::rest::RideController::requestRide(const drogon::HttpRequestPtr& req, std::function<void (const drogon::HttpResponsePtr &)> &&callback) {
+    LOG_INFO << "Received ride request";
+    auto jsonBody = req->getJsonObject();
+    if (!jsonBody) {
+        auto resp = drogon::HttpResponse::newHttpResponse();
+        resp->setStatusCode(drogon::k400BadRequest);
+        resp->setBody("Invalid JSON");
+        callback(resp);
+        return;
+    }
 
-RideController::RideController(application::UseCases::RequestRideUseCase& requestRideUseCase)
-    : requestRideUseCase(requestRideUseCase) {}
+    try {
+        RideRequestDTO rideRequest;
+        rideRequest.riderId = (*jsonBody)["riderId"].asInt();
+        double startLat = (*jsonBody)["startLocation"]["latitude"].asDouble();
+        double startLon = (*jsonBody)["startLocation"]["longitude"].asDouble();
+        rideRequest.startLocation = domain::geo::GeoPoint(startLat, startLon);
 
-std::string RideController::requestRide(const RideRequestDTO& request) {
-    std::cout << "\n  [RideController] Received ride request for Rider ID: " << request.riderId << std::endl;
-    std::cout << "    From: (" << request.startLocation.getLatitude() << ", " << request.startLocation.getLongitude() << ")" << std::endl;
-    std::cout << "    To: (" << request.endLocation.getLatitude() << ", " << request.endLocation.getLongitude() << ")" << std::endl;
+        double endLat = (*jsonBody)["endLocation"]["latitude"].asDouble();
+        double endLon = (*jsonBody)["endLocation"]["longitude"].asDouble();
+        rideRequest.endLocation = domain::geo::GeoPoint(endLat, endLon);
 
-    // Call the application layer use case
-    auto trip = requestRideUseCase.execute(request.riderId, request.startLocation, request.endLocation);
+        auto* plugin = drogon::app().getPlugin<plugins::UseCasePlugin>();
+        auto& useCase = plugin->getRequestRideUseCase();
+        auto trip = useCase.execute(rideRequest.riderId, rideRequest.startLocation, rideRequest.endLocation);
 
-    if (trip) {
-        std::cout << "  [RideController] Ride request processed successfully. Trip ID: " << trip->getId() << std::endl;
-        return "Ride requested successfully. Trip ID: " + std::to_string(trip->getId());
-    } else {
-        std::cout << "  [RideController] Failed to process ride request." << std::endl;
-        return "Failed to request ride.";
+        Json::Value ret;
+        if (trip) {
+            ret["tripId"] = trip->getId();
+            ret["message"] = "Ride requested successfully.";
+        } else {
+            ret["message"] = "Failed to request ride.";
+        }
+
+        auto resp = drogon::HttpResponse::newHttpJsonResponse(ret);
+        callback(resp);
+
+    } catch (const Json::Exception& e) {
+        auto resp = drogon::HttpResponse::newHttpResponse();
+        resp->setStatusCode(drogon::k400BadRequest);
+        resp->setBody("JSON parsing error: " + std::string(e.what()));
+        callback(resp);
     }
 }
-
-} // namespace rest
-} // namespace interfaces
-

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-subbuild/CMakeFiles/drogon-populate"
+		},
+		{
+			"file" : "/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-subbuild/CMakeFiles/drogon-populate.rule"
+		},
+		{
+			"file" : "/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-subbuild/CMakeFiles/drogon-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-subbuild/drogon-populate-prefix/src/drogon-populate-stamp/drogon-populate-build.rule"
+		},
+		{
+			"file" : "/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-subbuild/drogon-populate-prefix/src/drogon-populate-stamp/drogon-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-subbuild/drogon-populate-prefix/src/drogon-populate-stamp/drogon-populate-download.rule"
+		},
+		{
+			"file" : "/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-subbuild/drogon-populate-prefix/src/drogon-populate-stamp/drogon-populate-install.rule"
+		},
+		{
+			"file" : "/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-subbuild/drogon-populate-prefix/src/drogon-populate-stamp/drogon-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-subbuild/drogon-populate-prefix/src/drogon-populate-stamp/drogon-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-subbuild/drogon-populate-prefix/src/drogon-populate-stamp/drogon-populate-test.rule"
+		},
+		{
+			"file" : "/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-subbuild/drogon-populate-prefix/src/drogon-populate-stamp/drogon-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"drogon-populate"
+		],
+		"name" : "drogon-populate"
+	}
+}

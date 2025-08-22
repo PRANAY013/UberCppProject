@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-src/trantor -I/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-src/lib/inc -I/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-build/lib/inc -I/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-src/orm_lib/inc -I/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-src/nosql_lib/redis/inc -I/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-build -I/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-build/exports -I/Users/pranay/Pranay/PROG/UberCppProject/build/_deps/drogon-build/trantor/exports -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

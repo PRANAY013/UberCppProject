@@ -1,0 +1,10 @@
+{
+    "threads_num": 4,
+    "plugins": [
+        {
+            "name": "plugins::UseCasePlugin",
+            "dependencies": [],
+            "config": {}
+        }
+    ]
+}

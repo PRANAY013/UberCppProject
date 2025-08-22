@@ -98,8 +98,23 @@ uber_app: CMakeFiles/uber_app.dir/build.make
 uber_app: libapplication.a
 uber_app: libinfrastructure.a
 uber_app: libinterfaces.a
+uber_app: libplugins.dylib
+uber_app: _deps/drogon-build/libdrogon.a
+uber_app: libinfrastructure.a
+uber_app: libinterfaces.a
 uber_app: libapplication.a
 uber_app: libdomain.a
+uber_app: _deps/drogon-build/libdrogon.a
+uber_app: _deps/drogon-build/trantor/libtrantor.a
+uber_app: /opt/homebrew/lib/libssl.dylib
+uber_app: /opt/homebrew/lib/libcrypto.dylib
+uber_app: /opt/homebrew/lib/libcares.dylib
+uber_app: /opt/homebrew/lib/libjsoncpp.dylib
+uber_app: /opt/homebrew/lib/libbrotlidec.dylib
+uber_app: /opt/homebrew/lib/libbrotlienc.dylib
+uber_app: /opt/homebrew/lib/libbrotlicommon.dylib
+uber_app: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libsqlite3.tbd
+uber_app: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libz.tbd
 uber_app: CMakeFiles/uber_app.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pranay/Pranay/PROG/UberCppProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable uber_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uber_app.dir/link.txt --verbose=$(VERBOSE)

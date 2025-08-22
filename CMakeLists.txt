@@ -4,6 +4,14 @@ project(UberCppProject)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+include(FetchContent)
+FetchContent_Declare(
+  drogon
+  GIT_REPOSITORY https://github.com/drogonframework/drogon.git
+  GIT_TAG master
+)
+FetchContent_MakeAvailable(drogon)
+
 # --- Domain Library ---
 # Contains the core business logic and entities.
 add_library(domain
@@ -86,10 +94,20 @@ add_library(interfaces
 )
 
 # The interfaces layer depends on the application layer.
-target_link_libraries(interfaces application)
+target_link_libraries(interfaces application drogon)
+
+# --- Plugins Library ---
+add_library(plugins SHARED
+    src/plugins/UseCasePlugin.h
+    src/plugins/UseCasePlugin.cc
+)
+
+target_link_libraries(plugins application infrastructure interfaces drogon)
+
 
 
 # --- Main Executable ---
 # The entry point of the application.
 add_executable(uber_app src/main.cpp)
-target_link_libraries(uber_app application infrastructure interfaces)
+configure_file(config.json ${CMAKE_BINARY_DIR}/config.json COPYONLY)
+target_link_libraries(uber_app application infrastructure interfaces plugins drogon)

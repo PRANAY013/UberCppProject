@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /Users/pranay/Pranay/PROG/UberCppProject/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	/opt/homebrew/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	/opt/homebrew/bin/cpack --config ./CPackSourceConfig.cmake /Users/pranay/Pranay/PROG/UberCppProject/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -84,6 +104,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"dev\" \"lib\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -169,6 +234,19 @@ interfaces/fast:
 .PHONY : interfaces/fast
 
 #=============================================================================
+# Target rules for targets named plugins
+
+# Build rule for target.
+plugins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugins
+.PHONY : plugins
+
+# fast build rule for target.
+plugins/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plugins.dir/build.make CMakeFiles/plugins.dir/build
+.PHONY : plugins/fast
+
+#=============================================================================
 # Target rules for targets named uber_app
 
 # Build rule for target.
@@ -180,6 +258,214 @@ uber_app: cmake_check_build_system
 uber_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uber_app.dir/build.make CMakeFiles/uber_app.dir/build
 .PHONY : uber_app/fast
+
+#=============================================================================
+# Target rules for targets named drogon
+
+# Build rule for target.
+drogon: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drogon
+.PHONY : drogon
+
+# fast build rule for target.
+drogon/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/CMakeFiles/drogon.dir/build.make _deps/drogon-build/CMakeFiles/drogon.dir/build
+.PHONY : drogon/fast
+
+#=============================================================================
+# Target rules for targets named trantor
+
+# Build rule for target.
+trantor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trantor
+.PHONY : trantor
+
+# fast build rule for target.
+trantor/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/trantor/CMakeFiles/trantor.dir/build.make _deps/drogon-build/trantor/CMakeFiles/trantor.dir/build
+.PHONY : trantor/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/client.dir/build.make _deps/drogon-build/examples/CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+#=============================================================================
+# Target rules for targets named websocket_client
+
+# Build rule for target.
+websocket_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 websocket_client
+.PHONY : websocket_client
+
+# fast build rule for target.
+websocket_client/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/websocket_client.dir/build.make _deps/drogon-build/examples/CMakeFiles/websocket_client.dir/build
+.PHONY : websocket_client/fast
+
+#=============================================================================
+# Target rules for targets named websocket_server
+
+# Build rule for target.
+websocket_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 websocket_server
+.PHONY : websocket_server
+
+# fast build rule for target.
+websocket_server/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/websocket_server.dir/build.make _deps/drogon-build/examples/CMakeFiles/websocket_server.dir/build
+.PHONY : websocket_server/fast
+
+#=============================================================================
+# Target rules for targets named benchmark
+
+# Build rule for target.
+benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark
+.PHONY : benchmark
+
+# fast build rule for target.
+benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/benchmark.dir/build.make _deps/drogon-build/examples/CMakeFiles/benchmark.dir/build
+.PHONY : benchmark/fast
+
+#=============================================================================
+# Target rules for targets named helloworld
+
+# Build rule for target.
+helloworld: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloworld
+.PHONY : helloworld
+
+# fast build rule for target.
+helloworld/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/helloworld.dir/build.make _deps/drogon-build/examples/CMakeFiles/helloworld.dir/build
+.PHONY : helloworld/fast
+
+#=============================================================================
+# Target rules for targets named file_upload
+
+# Build rule for target.
+file_upload: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 file_upload
+.PHONY : file_upload
+
+# fast build rule for target.
+file_upload/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/file_upload.dir/build.make _deps/drogon-build/examples/CMakeFiles/file_upload.dir/build
+.PHONY : file_upload/fast
+
+#=============================================================================
+# Target rules for targets named login_session
+
+# Build rule for target.
+login_session: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 login_session
+.PHONY : login_session
+
+# fast build rule for target.
+login_session/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/login_session.dir/build.make _deps/drogon-build/examples/CMakeFiles/login_session.dir/build
+.PHONY : login_session/fast
+
+#=============================================================================
+# Target rules for targets named jsonstore
+
+# Build rule for target.
+jsonstore: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 jsonstore
+.PHONY : jsonstore
+
+# fast build rule for target.
+jsonstore/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/jsonstore.dir/build.make _deps/drogon-build/examples/CMakeFiles/jsonstore.dir/build
+.PHONY : jsonstore/fast
+
+#=============================================================================
+# Target rules for targets named redis_simple
+
+# Build rule for target.
+redis_simple: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 redis_simple
+.PHONY : redis_simple
+
+# fast build rule for target.
+redis_simple/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/redis_simple.dir/build.make _deps/drogon-build/examples/CMakeFiles/redis_simple.dir/build
+.PHONY : redis_simple/fast
+
+#=============================================================================
+# Target rules for targets named redis_chat
+
+# Build rule for target.
+redis_chat: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 redis_chat
+.PHONY : redis_chat
+
+# fast build rule for target.
+redis_chat/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/redis_chat.dir/build.make _deps/drogon-build/examples/CMakeFiles/redis_chat.dir/build
+.PHONY : redis_chat/fast
+
+#=============================================================================
+# Target rules for targets named async_stream
+
+# Build rule for target.
+async_stream: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 async_stream
+.PHONY : async_stream
+
+# fast build rule for target.
+async_stream/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/async_stream.dir/build.make _deps/drogon-build/examples/CMakeFiles/async_stream.dir/build
+.PHONY : async_stream/fast
+
+#=============================================================================
+# Target rules for targets named cors
+
+# Build rule for target.
+cors: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cors
+.PHONY : cors
+
+# fast build rule for target.
+cors/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/examples/CMakeFiles/cors.dir/build.make _deps/drogon-build/examples/CMakeFiles/cors.dir/build
+.PHONY : cors/fast
+
+#=============================================================================
+# Target rules for targets named _drogon_ctl
+
+# Build rule for target.
+_drogon_ctl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _drogon_ctl
+.PHONY : _drogon_ctl
+
+# fast build rule for target.
+_drogon_ctl/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/drogon_ctl/CMakeFiles/_drogon_ctl.dir/build.make _deps/drogon-build/drogon_ctl/CMakeFiles/_drogon_ctl.dir/build
+.PHONY : _drogon_ctl/fast
+
+#=============================================================================
+# Target rules for targets named drogon_ctl
+
+# Build rule for target.
+drogon_ctl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drogon_ctl
+.PHONY : drogon_ctl
+
+# fast build rule for target.
+drogon_ctl/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/drogon-build/drogon_ctl/CMakeFiles/drogon_ctl.dir/build.make _deps/drogon-build/drogon_ctl/CMakeFiles/drogon_ctl.dir/build
+.PHONY : drogon_ctl/fast
 
 src/application/UseCases/AssignDriverUseCase.o: src/application/UseCases/AssignDriverUseCase.cc.o
 .PHONY : src/application/UseCases/AssignDriverUseCase.o
@@ -829,6 +1115,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uber_app.dir/build.make CMakeFiles/uber_app.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/plugins/UseCasePlugin.o: src/plugins/UseCasePlugin.cc.o
+.PHONY : src/plugins/UseCasePlugin.o
+
+# target to build an object file
+src/plugins/UseCasePlugin.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plugins.dir/build.make CMakeFiles/plugins.dir/src/plugins/UseCasePlugin.cc.o
+.PHONY : src/plugins/UseCasePlugin.cc.o
+
+src/plugins/UseCasePlugin.i: src/plugins/UseCasePlugin.cc.i
+.PHONY : src/plugins/UseCasePlugin.i
+
+# target to preprocess a source file
+src/plugins/UseCasePlugin.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plugins.dir/build.make CMakeFiles/plugins.dir/src/plugins/UseCasePlugin.cc.i
+.PHONY : src/plugins/UseCasePlugin.cc.i
+
+src/plugins/UseCasePlugin.s: src/plugins/UseCasePlugin.cc.s
+.PHONY : src/plugins/UseCasePlugin.s
+
+# target to generate assembly for a file
+src/plugins/UseCasePlugin.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plugins.dir/build.make CMakeFiles/plugins.dir/src/plugins/UseCasePlugin.cc.s
+.PHONY : src/plugins/UseCasePlugin.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -836,12 +1146,35 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... _drogon_ctl"
 	@echo "... application"
+	@echo "... async_stream"
+	@echo "... benchmark"
+	@echo "... client"
+	@echo "... cors"
 	@echo "... domain"
+	@echo "... drogon"
+	@echo "... drogon_ctl"
+	@echo "... file_upload"
+	@echo "... helloworld"
 	@echo "... infrastructure"
 	@echo "... interfaces"
+	@echo "... jsonstore"
+	@echo "... login_session"
+	@echo "... plugins"
+	@echo "... redis_chat"
+	@echo "... redis_simple"
+	@echo "... trantor"
 	@echo "... uber_app"
+	@echo "... websocket_client"
+	@echo "... websocket_server"
 	@echo "... src/application/UseCases/AssignDriverUseCase.o"
 	@echo "... src/application/UseCases/AssignDriverUseCase.i"
 	@echo "... src/application/UseCases/AssignDriverUseCase.s"
@@ -923,6 +1256,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/plugins/UseCasePlugin.o"
+	@echo "... src/plugins/UseCasePlugin.i"
+	@echo "... src/plugins/UseCasePlugin.s"
 .PHONY : help
 
 
