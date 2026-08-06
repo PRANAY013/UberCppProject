@@ -14,8 +14,9 @@ static int nextTripId = 1;
 
 RequestRideUseCase::RequestRideUseCase(const domain::routing::Router& router, const domain::Matching& matching,
                                        infrastructure::persistence::IRepository<domain::Rider, int>& riderRepository,
-                                       infrastructure::persistence::IRepository<domain::Trip, int>& tripRepository)
-    : router(router), matching(matching), riderRepository(riderRepository), tripRepository(tripRepository) {}
+                                       infrastructure::persistence::IRepository<domain::Trip, int>& tripRepository,
+                                       infrastructure::persistence::InMemoryDriverRepository& driverRepository)
+    : router(router), matching(matching), riderRepository(riderRepository), tripRepository(tripRepository), driverRepository(driverRepository) {}
 
 std::optional<domain::Trip> RequestRideUseCase::execute(int riderId, const domain::geo::GeoPoint& start, const domain::geo::GeoPoint& end) {
     // --- Placeholder Implementation ---
@@ -47,13 +48,7 @@ std::optional<domain::Trip> RequestRideUseCase::execute(int riderId, const domai
         std::cout << "  [RequestRideUseCase] No route found." << std::endl;
     }
 
-    // 5. Use the injected matching service to find a driver
-    // For demonstration, create some dummy drivers
-    domain::Driver driver1(101, domain::Driver::Status::Idle, 4.8, "Toyota Camry"); // Assign ID to dummy driver
-    domain::Driver driver2(102, domain::Driver::Status::Idle, 4.9, "Honda Accord"); // Assign ID to dummy driver
-    std::vector<domain::Driver> availableDrivers = {driver1, driver2};
-
-    auto bestDriver = matching.findBestDriver(newTrip, availableDrivers);
+    auto bestDriver = matching.findBestDriver(newTrip, start, driverRepository);
 
     if (bestDriver) {
         std::cout << "  [RequestRideUseCase] Best driver found: " << bestDriver->getVehicle() << std::endl;

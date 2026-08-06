@@ -5,12 +5,14 @@ namespace pricing {
 
 FareCalculator::FareCalculator() {}
 
-// A simple fare calculation for now.
-// We will add more complex parameters like distance, duration, and surge pricing later.
-double FareCalculator::calculateFare(const SurgeModel& surgeModel) const {
-    // Let's assume a flat base fare for now.
-    double baseFare = 15.50;
-    return baseFare * surgeModel.getMultiplier();
+double FareCalculator::calculateFare(
+    double distance_km, double duration_min,
+    const SurgeModel& surge, int zone_id) const noexcept {
+    constexpr double BASE_FARE    = 20.0;
+    constexpr double PER_KM_RATE  = 12.0;
+    constexpr double PER_MIN_RATE = 2.0;
+    double base = BASE_FARE + (distance_km * PER_KM_RATE) + (duration_min * PER_MIN_RATE);
+    return base * surge.getMultiplier(zone_id);
 }
 
 } // namespace pricing

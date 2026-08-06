@@ -3,21 +3,28 @@
 
 #include "../../domain/pricing/FareCalculator.h"
 #include "../../domain/pricing/SurgeModel.h"
+#include "../../domain/routing/Router.h"
 #include "../../domain/trip/Trip.h"
+#include "../../domain/geo/GeoPoint.h"
 
 namespace application {
 namespace UseCases {
 class QuoteFareUseCase {
 public:
-    QuoteFareUseCase(const domain::pricing::FareCalculator& fareCalculator, const domain::pricing::SurgeModel& surgeModel);
+    struct QuoteResult {
+        double fare;
+        double surge_multiplier;
+        double distance_km;
+    };
 
-    // For now, a simple quote based on existing models.
-    // Later, this could take trip details like distance, duration, etc.
-    double execute() const;
+    QuoteFareUseCase(const domain::pricing::FareCalculator& fareCalculator, const domain::pricing::SurgeModel& surgeModel, const domain::routing::Router& router);
+
+    QuoteResult execute(const domain::geo::GeoPoint& start, const domain::geo::GeoPoint& end) const;
 
 private:
     const domain::pricing::FareCalculator& fareCalculator;
     const domain::pricing::SurgeModel& surgeModel;
+    const domain::routing::Router& router;
 };
 } // namespace UseCases
 } // namespace application

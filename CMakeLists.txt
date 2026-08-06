@@ -4,13 +4,28 @@ project(UberCppProject)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(TRANTOR_TLS_PROVIDER "none" CACHE STRING "" FORCE)
+
+find_package(Threads REQUIRED)
+
 include(FetchContent)
+set(BUILD_EXAMPLES OFF CACHE BOOL "Disable drogon examples" FORCE)
+set(BUILD_TESTING OFF CACHE BOOL "Disable testing" FORCE)
 FetchContent_Declare(
   drogon
   GIT_REPOSITORY https://github.com/drogonframework/drogon.git
   GIT_TAG master
 )
 FetchContent_MakeAvailable(drogon)
+
+# --- Benchmark Library ---
+FetchContent_Declare(
+  benchmark
+  GIT_REPOSITORY https://github.com/google/benchmark.git
+  GIT_TAG v1.8.3
+)
+set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "Disable benchmark tests" FORCE)
+FetchContent_MakeAvailable(benchmark)
 
 # --- Domain Library ---
 # Contains the core business logic and entities.
@@ -40,6 +55,8 @@ add_library(domain
     src/domain/pricing/FareCalculator.cc
     src/domain/pricing/SurgeModel.h
     src/domain/pricing/SurgeModel.cc
+    src/domain/geo/SpatialGrid.h
+    src/domain/geo/SpatialGrid.cc
 )
 
 # --- Application Library ---
@@ -80,10 +97,13 @@ add_library(infrastructure
     src/infrastructure/messaging/EventBus.cc
     src/infrastructure/payments/PaymentsGateway.h
     src/infrastructure/payments/PaymentsGateway.cc
+    src/infrastructure/messaging/LocationUpdateQueue.h
+    src/infrastructure/messaging/LocationUpdateQueue.cc
+    src/infrastructure/MemoryPool.h
 )
 
 # The infrastructure layer depends on the domain layer.
-target_link_libraries(infrastructure domain)
+target_link_libraries(infrastructure domain Threads::Threads)
 
 # --- Interfaces Library ---
 # Contains API controllers and DTOs.
@@ -111,3 +131,10 @@ target_link_libraries(plugins application infrastructure interfaces drogon)
 add_executable(uber_app src/main.cpp)
 configure_file(config.json ${CMAKE_BINARY_DIR}/config.json COPYONLY)
 target_link_libraries(uber_app application infrastructure interfaces plugins drogon)
+
+# --- Benchmarks Executable ---
+add_executable(uber_benchmarks 
+    benchmarks/SpatialGridBenchmark.cc 
+    benchmarks/ObjectPoolBenchmark.cc
+)
+target_link_libraries(uber_benchmarks benchmark::benchmark benchmark::benchmark_main domain infrastructure)
